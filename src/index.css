@@ -1,0 +1,33 @@
+body {
+  background: url(bluer.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container {
+  font-family: Cabin, Helvetica, Arial, sans-serif;
+      letter-spacing: 1px;
+      font-weight: 300;
+font-style: normal;
+background-color: white;
+color: black;
+}
+#app div{
+height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav {
+  font-size: 20px;
+}
+.menu a {
+  text-decoration: none;
+}
+.main-box {
+  border-right: 5px double black;
+  border-left: 5px double black;
+}
