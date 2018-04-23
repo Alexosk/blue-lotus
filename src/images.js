@@ -6,5 +6,6 @@ export default {
   indexPhoto: require('./mat2.png'),
   logo: require('./blue-logo.png'),
   dummyLotus: require('./dummy-lotus.jpg'),
-  blue: require('./blue.jpg')
+  blue: require('./blue.jpg'),
+  door: require('./doors.jpg')
 }

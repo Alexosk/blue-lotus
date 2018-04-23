@@ -10,20 +10,20 @@ class ColdSandwich  extends Component {
         <div className='p-4 text-center mx-2'>
           <h4 className='pb-2 font-weight-light text-center border-bottom'>Surdegs Mackor</h4>
         <ul className='mt-4'>
-          <li><b>Cheese sandwich</b> <br/> cheese</li>
-          <li><b>Vegan</b>  <br/> parsley relish, sun dried tomatoes <Badge color="success" pill>Vegan</Badge></li>
-          <li><b>Hades hämnd</b> <br/> ham, cheese, dijon mustard</li>
+          <li><b>Allahs gåva</b> <br/> ost</li>
+          <li><b>Vegan</b>  <br/> persiljeröra, soltorkade tomater <Badge color="success" pill>Vegan</Badge></li>
+          <li><b>Hades hämnd</b> <br/> skinka, ost, dijon</li>
           <li><b>Nirvana</b> <br/> hummus <Badge color="success" pill>Vegan</Badge></li>
-          <li><b>Magre Memeth</b> <br/> feta cheese, pesto, sun dried tomatoes</li>
-          <li><b>Maya</b> <br/> spicy tuna</li>
-          <li><b>Fatimas drömmar</b> <br/> parsley relish, feta cheese, tomato, red onion</li>
+          <li><b>Magre Memeth</b> <br/> feta, pesto, soltorkade tomater</li>
+          <li><b>Maya</b> <br/> tonfiskröra</li>
+          <li><b>Fatimas drömmar</b> <br/> persiljeröra, feta, tomat, rödlök</li>
         </ul>
         </div>
         <div className='p-4 text-center mx-2'>
         <h4 className='pb-2 font-weight-light text-center border-bottom'>Knäcke Mackor</h4>
         <ul className='mt-4'>
-          <li><b>Ra’s skörd</b> <br/> egg, leek, caviar <Badge color="info" pill>Swedish</Badge></li>
-          <li><b>Isis synd</b> <br/> parsley relish, feta cheese, tomato, red onion</li>
+          <li><b>Ra’s skörd</b> <br/> ägg, purjo, kaviar</li>
+          <li><b>Isis synd</b> <br/> persiljeröra, feta, tomat, rödlök</li>
           <li><b>Artemis </b> <br/> hummus <Badge color="success" pill>Vegan</Badge></li>
         </ul>
         </div>

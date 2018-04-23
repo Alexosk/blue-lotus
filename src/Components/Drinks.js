@@ -9,7 +9,7 @@ class Drinks extends Component {
         <div className='p-4 text-center mx-2'>
           <h4 className='pb-2 font-weight-light text-center border-bottom'>Varmt</h4>
         <ul className='mt-4'>
-          <li>Tea/coffee</li>
+          <li>Te/kaffe</li>
           <li>Espresso</li>
           <li>Americano</li>
           <li>Caffe latte</li>
@@ -17,7 +17,7 @@ class Drinks extends Component {
           <li>Cortado</li>
           <li>Macchiato</li>
           <li>Mocca</li>
-          <li>Hot chocolate <br /> <em className='font-weight-light'>with whipped cream</em></li>
+          <li>Varmt choklad <em className='font-weight-light'>med vispgrädde</em></li>
           <li>Chai</li>
         </ul>
         </div>
@@ -35,8 +35,8 @@ class Drinks extends Component {
         </div>
       </div>
       <div className='mt-5 mb-5'>
-        <h3 className='text-center font-weight-light'>We also server wine, lager, ale and cider!</h3>
-          <h4 className='text-center font-weight-light'>Please come in and see whats on the meny today</h4>
+        <h3 className='text-center font-weight-light'>Vi serverar också vin, öl och cider!</h3>
+          <h4 className='text-center font-weight-light'>Kom gärna förbi och se dagens meny</h4>
         </div>
     </div>)
   }

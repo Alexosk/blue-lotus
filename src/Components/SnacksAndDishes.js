@@ -10,23 +10,23 @@ class SnacksAndDishes extends Component {
         <div className='p-4 text-center mx-2'>
           <h4 className='pb-2 font-weight-light text-center border-bottom'>Snacks</h4>
         <ul className='mt-4'>
-          <li>Hummus with bread <Badge color="success" pill>Vegan</Badge></li>
-          <li>Small mixsalad</li>
-          <li>Garlic bread</li>
-          <li>Yoghurt with mixed nuts, honey & blueberry</li>
-          <li>Vegan yoghurt with mixed nuts & blueberry <Badge color="success" pill>Vegan</Badge></li>
+          <li>Hummus med bröd <Badge color="success" pill>Vegan</Badge></li>
+          <li>Liten blandsallad</li>
+          <li>Vitlöksbröd</li>
+          <li>Youghurt med nötkross, honung & blåbär</li>
+          <li>Havreghurt med nötkross & blåbär <Badge color="success" pill>Vegan</Badge></li>
         </ul>
         </div>
         <div className='p-4 text-center mx-2'>
         <h4 className='pb-2 font-weight-light text-center border-bottom'>Dishes</h4>
         <ul className='mt-4'>
-          <li>Today’s special</li>
-          <li>Quiche (pie) with salad</li>
-          <li>Soup with cheese sandwich</li>
-          <li>Small soup with bread</li>
-          <li>Mix salad with hummus & sundried tomatoes <Badge color="success" pill>Vegan</Badge></li>
-          <li>Mix salad with feta cheese & honeyrosted almonds</li>
-          <li>Mix salad with spicy tuna & boiled egg</li>
+          <li>Dagens special</li>
+          <li>Paj mes sallad och snittar</li>
+          <li>Soppa med ostmacka</li>
+          <li>Liten soppa med bröd</li>
+          <li>Blandsallad med hummus och soltorkade tomater <Badge color="success" pill>Vegan</Badge></li>
+          <li>Blandsallad med fets och honungsrostade mandlar</li>
+          <li>Blandsallad med tonfiskröra och kokt ägg</li>
         </ul>
         </div>
       </div>

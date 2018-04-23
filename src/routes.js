@@ -8,17 +8,19 @@ import WarmSandwich from './Components/WarmSandwich'
 import SnacksAndDishes from './Components/SnacksAndDishes'
 import Breakfast from './Components/Breakfast'
 import Drinks from './Components/Drinks'
+import Lunch from './Components/Lunch'
 
 const routes = {
   pageRoutes:[
   {name: 'Home', exact: true, path: '/', component: Home},
   {name: 'Meny', exact: false, path: '/meny', component: Meny},
   {name: 'Gallery', exact: false, path: '/gallery', component: Gallery},
-  {name: 'Story', exact: false, path: '/story', component: Story},
+  {name: 'Story', exact: false, path: '/historia', component: Story},
   {name: 'About', exact: false, path: '/about', component: About}
 ],
   subMenu:[
   {name: 'Breakfast', exact: false, path: '/meny/breakfast', component: Breakfast},
+  {name: 'Lunch', exact: false, path: '/meny/lunch', component: Lunch},
   {name: 'ColdSandwich', exact: false, path: '/meny/coldsandwich', component: ColdSandwich},
   {name: 'WarmSandwich', exact: false, path: '/meny/warmsandwich', component: WarmSandwich},
   {name: 'SnacksAndDishes', exact: false, path: '/meny/snacksanddishes', component: SnacksAndDishes},
