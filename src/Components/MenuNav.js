@@ -4,6 +4,8 @@ import {
   Route
 } from 'react-router-dom';
 import routes from '../routes'
+import images from '../images'
+let {food} = images
 
 class MenyNav extends Component {
   render() {
@@ -16,16 +18,18 @@ class MenyNav extends Component {
     ))
     return (
       <div>
-        <div className='mt-4 bg-light border'>
-          <div className='btn-group p-4 d-flex justify-content-center align-content-center flex-wrap'>
-            <Link className=' btn btn-outline-info' to={'/meny/breakfast'}>Frukost</Link>
-            <Link className=' btn btn-outline-info' to={'/meny/lunch'}>Lunch</Link>
-            <Link className=' btn btn-outline-info' to={'/meny/coldsandwich'}>Kalla Mackor</Link>
-            <Link className=' btn btn-outline-info' to={'/meny/warmsandwich'}>Varma Mackor</Link>
-            <Link className=' btn btn-outline-info' to={'/meny/snacksanddishes'}>Snacks And Dishes</Link>
-            <Link className=' btn btn-outline-info' to={'/meny/drinks'}>Dryck</Link>
+
+        <div className='mt-4'>
+          <div className='content btn-group p-4 d-flex justify-content-center align-content-center flex-wrap'>
+            <Link className=' btn btn-outline-dark' to={'/meny/breakfast'}>Frukost</Link>
+            <Link className=' btn btn-outline-dark' to={'/meny/lunch'}>Lunch</Link>
+            <Link className=' btn btn-outline-dark' to={'/meny/coldsandwich'}>Kalla Mackor</Link>
+            <Link className=' btn btn-outline-dark' to={'/meny/warmsandwich'}>Varma Mackor</Link>
+            <Link className=' btn btn-outline-dark' to={'/meny/dishes'}>Maträtter</Link>
+            <Link className=' btn btn-outline-dark' to={'/meny/snacks'}>Smått Och Gott</Link>
+            <Link className=' btn btn-outline-dark' to={'/meny/drinks'}>Dryck</Link>
           </div>
-          <div className='d-flex justify-content-center'>
+          <div className='content d-flex justify-content-center'>
             {subMenu}
           </div>
         </div>

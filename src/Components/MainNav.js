@@ -1,14 +1,7 @@
 import React, {Component} from 'react'
-import {
-  Navbar,
-  Collapse,
-  NavItem,
-  NavbarToggler,
-  Nav,
-  NavLink,
-} from 'reactstrap'
+import { Link } from 'react-router-dom'
 import images from '../images'
-let {logo} = images
+let {logo, flowerLogo} = images
 
 class MainNav extends Component {
   constructor (props) {
@@ -26,32 +19,28 @@ class MainNav extends Component {
   }
   render () {
     return (
-  <div>
-    <div className='d-flex justify-content-center'>
-      <img className='p-3 mx-auto' src={logo} width='200' height='200' alt='logo'/>
-      </div>
-      <Navbar className='border-top border-bottom' width='100%' color='light' light={true} expand='md'>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar={true} >
-          <Nav className='mx-auto text-uppercase' navbar={true}>
-            <NavItem>
-              <NavLink exact='exact' href='/' className='mr-2 ml-2 font-weight-light text-dark active' activeClassName="active">Hem</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href='/meny/breakfast' className='mr-2 ml-2 font-weight-light text-dark'>Meny</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href='/gallery' className='mr-2 ml-2 font-weight-light text-dark '>Gallery</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href='/historia' className='mr-2 ml-2 font-weight-light text-dark '>Historia</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href='/about' className='mr-2 ml-2 font-weight-light text-dark '>Om Oss</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+  <div className='mainNav d-flex my-auto'>
+    <ul className='Nav' width='100%'>
+      <li className='ml-5'><img className='' src={flowerLogo} width='50' height='40'/></li>
+        <li className='text-uppercase text-dark ml-4'>Café&nbsp;Blå&nbsp;Lotus</li>
+    </ul>
+    <ul className='Nav mainMenu justify-content-end mr-5'>
+      <li className=''>
+        <Link exact='exact' to='/' className='a mr-4 ml-2 text-uppercase text-dark active' activeClassName="active">Hem</Link>
+      </li>
+      <li>
+        <Link to='/meny/breakfast' className='a mr-4 ml-2 text-uppercase text-dark'>Meny</Link>
+      </li>
+      <li>
+        <Link to='/gallery' className='a mr-4 ml-2 text-uppercase text-dark'>Galleri</Link>
+      </li>
+      <li>
+        <Link to='/historia' className='a mr-4 ml-2 text-uppercase text-dark'>Historia</Link>
+      </li>
+      <li>
+        <Link to='/about' className='a mr-4 ml-2 text-uppercase text-dark'>Om Oss</Link>
+      </li>
+    </ul>
     </div>)
   }
 }

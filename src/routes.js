@@ -1,11 +1,12 @@
 import Home from './Views/Home'
 import Meny from './Views/Meny'
-import Gallery from './Views/Gallery'
+import PhotoAlbum from './Views/PhotoAlbum'
 import Story from './Views/Story'
 import About from './Views/About'
 import ColdSandwich from './Components/ColdSandwich'
 import WarmSandwich from './Components/WarmSandwich'
-import SnacksAndDishes from './Components/SnacksAndDishes'
+import Dishes from './Components/Dishes'
+import Snacks from './Components/Snacks'
 import Breakfast from './Components/Breakfast'
 import Drinks from './Components/Drinks'
 import Lunch from './Components/Lunch'
@@ -14,7 +15,7 @@ const routes = {
   pageRoutes:[
   {name: 'Home', exact: true, path: '/', component: Home},
   {name: 'Meny', exact: false, path: '/meny', component: Meny},
-  {name: 'Gallery', exact: false, path: '/gallery', component: Gallery},
+  {name: 'PhotoAlbum', exact: false, path: '/gallery', component: PhotoAlbum},
   {name: 'Story', exact: false, path: '/historia', component: Story},
   {name: 'About', exact: false, path: '/about', component: About}
 ],
@@ -23,8 +24,9 @@ const routes = {
   {name: 'Lunch', exact: false, path: '/meny/lunch', component: Lunch},
   {name: 'ColdSandwich', exact: false, path: '/meny/coldsandwich', component: ColdSandwich},
   {name: 'WarmSandwich', exact: false, path: '/meny/warmsandwich', component: WarmSandwich},
-  {name: 'SnacksAndDishes', exact: false, path: '/meny/snacksanddishes', component: SnacksAndDishes},
-    {name: 'Drinks', exact: false, path: '/meny/drinks', component: Drinks}
+  {name: 'Dishes', exact: false, path: '/meny/dishes', component: Dishes},
+  {name: 'Snacks', exact: false, path: '/meny/snacks', component: Snacks},
+  {name: 'Drinks', exact: false, path: '/meny/drinks', component: Drinks}
   ]
 }
 

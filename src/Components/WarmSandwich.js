@@ -1,25 +1,46 @@
 import React, { Component } from 'react'
-import {Badge} from 'reactstrap'
+import { Badge } from 'reactstrap'
+import images from '../images'
+let {warmsandwich} = images
 
 class WarmSandwich extends Component {
   render() {
     return (
       <div>
-        <h6 className='font-weight-light text-center px-2'><em>Alla mackor är Serverade på surdegsbröd och går att få på glutenfritt bröd</em></h6>
-      <div className='p-4 d-flex justify-content-centerv text-center'>
-        <ul>
-          <li><b>Atena</b> <br/>skinka, dijon, dragon, purjo, tomat, ost</li>
-          <li><b>Freja</b> <br/>persiljeröra, chèvre, tomat, ost</li>
-          <li><b>Hermes</b> <br/>skinka, feta, purjo, tomat, ost</li>
-          <li><b>Hugin</b> <br/>salami, chèvre, rödlök, tomat, ost</li>
-          <li><b>Shiva</b> <br/>vitlökssmör, feta, champinjon, rödlök, tomat, ost</li>
-          <li><b>Pan</b> <br/>kalkon, soltorkade tomater, rödlök, tomat, ost</li>
-          <li><b>Abdalla</b> <br/>tonfiskröra, rödlök, tomat, ost</li>
-          <li><b>Lilith </b> <br/>persiljeröra, soltorkade tomater, champinjon, rödlök, tomat, rostade frön <Badge color="success" pill>Vegan</Badge></li>
-          <li><b>Lotus special</b> <br/>pesto, feta, tomat, ost</li>
-        </ul>
-      </div>
-    </div>)
+        <h6 className='font-weight-light px-2 text-center'><em>Alla mackor är Serverade på surdegsbröd och går att få på glutenfritt bröd</em></h6>
+        <div className='p-4 d-flex justify-content-center'>
+          <ul>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Atena: </b> Skinka, dijon, dragon, purjo, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Freja: </b> Persiljeröra, chèvre, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Hermes: </b> Skinka, feta, purjo, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Hugin: </b> Salami, chèvre, rödlök, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Shiva: </b> Vitlökssmör, feta, champinjon, rödlök, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Pan: </b> Kalkon, soltorkade tomater, rödlök, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Abdalla: </b> Tonfiskröra, rödlök, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Lotus special: </b> Pesto, feta, tomat, ost</h5>
+            </li>
+            <li className='mb-3'>
+              <h5 className='font-weight-light'><b>Lilith: </b> Persiljeröra, soltorkade tomater, champinjon,<br /> rödlök, tomat, rostade frön <Badge color="success" pill>Vegan</Badge></h5>
+            </li>
+          </ul>
+        </div>
+        <img className='mb-4' width='100%' src={warmsandwich}/>
+      </div>)
   }
 }
 

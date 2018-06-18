@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import images from '../images'
+let {drinks} = images
 
 class Drinks extends Component {
   render() {
@@ -7,7 +9,7 @@ class Drinks extends Component {
         <h6 className='font-weight-light text-center'><em>Alla mackor går att få på glutenfritt knäcke bröd</em></h6>
       <div className="d-flex flex-wrap justify-content-center mt-2 mb-5">
         <div className='p-4 text-center mx-2'>
-          <h4 className='pb-2 font-weight-light text-center border-bottom'>Varmt</h4>
+          <h4 className='pb-2 font-weight-light text-center border-bottom'>Kaffe & Te</h4>
         <ul className='mt-4'>
           <li>Te/kaffe</li>
           <li>Espresso</li>
@@ -22,14 +24,14 @@ class Drinks extends Component {
         </ul>
         </div>
         <div className='p-4 text-center mx-2'>
-        <h4 className='pb-2 font-weight-light text-center border-bottom'>Kallt</h4>
+        <h4 className='pb-2 font-weight-light text-center border-bottom'>Annat</h4>
         <ul className='mt-4'>
-          <li>Soft drinks</li>
-          <li>Orange juice</li>
+          <li>Läsk</li>
+          <li>Apelsinjuice</li>
           <li>San Pellegrino</li>
-          <li>Appel juice</li>
-          <li>Pear & ginger lemonade</li>
-          <li>Lager free of alcohol</li>
+          <li>Äppeljuice</li>
+          <li>Päron och ingefära lemonade</li>
+          <li>Lättöl</li>
           <li>Lassi</li>
         </ul>
         </div>
@@ -38,6 +40,7 @@ class Drinks extends Component {
         <h3 className='text-center font-weight-light'>Vi serverar också vin, öl och cider!</h3>
           <h4 className='text-center font-weight-light'>Kom gärna förbi och se dagens meny</h4>
         </div>
+        <img className='mb-4' width='100%' src={drinks}/>
     </div>)
   }
 }

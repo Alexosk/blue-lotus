@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Helmet from 'react-helmet'
 import {Route} from 'react-router-dom'
 import routes from './routes';
 import MainNav from './Components/MainNav';
@@ -16,12 +17,12 @@ class App extends Component {
       />
 ))
     return (
-      <div className='container main-box d-flex flex-column'>
+      <div className='d-flex flex-column'>
         <MainNav/>
-        <main>
+        <main className='pt-5'>
           {pageRoutes}
         </main>
-        <Footer/>
+        <Footer />
       </div>
     )
   }

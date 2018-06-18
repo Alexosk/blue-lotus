@@ -1,33 +1,80 @@
-body {
-  background: url(bluer.jpg) no-repeat center center fixed;
+html, body {
+  /* background: url(bluer.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #A3C6C4;
+  letter-spacing: 2px;
 }
+
+main {
+  background-color: #A3C6C4;
+}
+
 .container {
   font-family: Cabin, Helvetica, Arial, sans-serif;
-      letter-spacing: 1px;
-      font-weight: 300;
-font-style: normal;
-background-color: white;
-color: black;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #A3C6C4;
+  color: black;
 }
-#app div{
-height: 100%;
+.content {
+  background-color: #CDEBEB;
+}
+#app div {
+  height: 100%;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 nav {
   font-size: 20px;
 }
+
 .menu a {
   text-decoration: none;
 }
+
 .main-box {
   border-right: 5px double black;
   border-left: 5px double black;
+}
+
+.Nav {
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.Nav li {
+
+}
+.mainMenu li a {
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  letter-spacing: 2px;
+  padding: 0.5em 0 0.5em 0;
+  transition: .5s;
+}
+.mainMenu li a:hover {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+.mainNav {
+  position: fixed;
+  width: 100%;
+  background-color: #c2f0c2;
+  z-index: 9999;
+  font-weight: lighter;
+}
+
+.footer {
+  background-color: #A3C6C4;
 }
