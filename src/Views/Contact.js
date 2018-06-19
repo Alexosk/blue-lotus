@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import images from '../images'
 let {logo, facebook2, instagram2} = images
 
-class About extends Component {
+class Contact extends Component {
   render () {
     return (
       <div className='mt-5 pt-5 content container'>
@@ -13,19 +13,25 @@ class About extends Component {
               <ul className='p-4 text-center'>
                 <h2>Om Oss</h2>
                 <li>
-                  <h5 className='font-weight-light'><b>Adress:</b> Katarina&nbsp;Bangata 21</h5>
+                  <h5 className='font-weight-light adress'><b>Adress:</b> Katarina&nbsp;Bangata 21 <br/> 116 39 Stockholm</h5>
                 </li>
                 <li>
-                  <h5 className='font-weight-light'><b>Tel:</b> +4686445043</h5>
+                  <h5 className='font-weight-light'><b>Tel:</b> +46 864 450 43</h5>
                 </li>
               </ul>
               <ul className=' text-center p-4'>
                 <h2>Öppettider</h2>
                 <li>
-                  <h5 className='font-weight-light'><b>Mån-fre:</b> 08:30 - 20:00</h5>
+                  <h5 className='font-weight-light'><b>Mån-Tis:</b> 08:30 - 20:00</h5>
                 </li>
                 <li>
-                  <h5 className='font-weight-light'><b>Lör-Sön:</b> 09:30 - 19:00</h5>
+                  <h5 className='font-weight-light'><b>Ons-Fre:</b> 08:30 - 21:00</h5>
+                </li>
+                <li>
+                  <h5 className='font-weight-light'><b>Lör:</b> 09:30 - 21:00</h5>
+                </li>
+                <li>
+                  <h5 className='font-weight-light'><b>Sön:</b> 09:30 - 19:00</h5>
                 </li>
               </ul>
               <ul className='justify-content-center p-4 d-flex'>
@@ -44,4 +50,4 @@ class About extends Component {
   }
 }
 
-export default About
+export default Contact

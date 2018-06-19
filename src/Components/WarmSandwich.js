@@ -35,11 +35,11 @@ class WarmSandwich extends Component {
               <h5 className='font-weight-light'><b>Lotus special: </b> Pesto, feta, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Lilith: </b> Persiljeröra, soltorkade tomater, champinjon,<br /> rödlök, tomat, rostade frön <Badge color="success" pill>Vegan</Badge></h5>
+              <h5 className='adress font-weight-light'><b>Lilith: </b> Persiljeröra, soltorkade tomater, champinjon,<br /> rödlök, tomat, rostade frön <Badge color="success" pill>Vegan</Badge></h5>
             </li>
           </ul>
         </div>
-        <img className='mb-4' width='100%' src={warmsandwich}/>
+        <img className='rounded mb-4' width='100%' src={warmsandwich}/>
       </div>)
   }
 }

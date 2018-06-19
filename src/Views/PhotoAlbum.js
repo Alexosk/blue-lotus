@@ -7,19 +7,19 @@ class PhotoAlbum extends Component {
     return (
       <div className='mt-4 mb-5 container d-flex flex-wrap'>
         <div width='800px' height='800px'>
-        <img className='mt-4 img-fluid' src={gallery1} alt='dummyData' width='100%' height='auto' />
+        <img className='rounded mt-4 img-fluid' src={gallery1} alt='dummyData' width='100%' height='auto' />
         </div>
         <div width='800px' height='800px'>
-        <img className='mt-4 img-fluid' src={gallery2} alt='dummyData' width='100%' height='auto' />
+        <img className='rounded mt-4 img-fluid' src={gallery2} alt='dummyData' width='100%' height='auto' />
         </div>
         <div>
-          <img className='mt-4 img-fluid' src={gallery3} alt='dummyData' width='100%' height='800px' />
+          <img className='rounded mt-4 img-fluid' src={gallery3} alt='dummyData' width='100%' height='800px' />
           </div>
           <div>
-          <img className='mt-4 img-fluid' src={gallery4} alt='dummyData' width='100%' height='800px' />
+          <img className='rounded mt-4 img-fluid' src={gallery4} alt='dummyData' width='100%' height='800px' />
           </div>
           <div>
-          <img className='mt-4 img-fluid mb-4' src={gallery5} alt='dummyData' width='100%' height='800px' />
+          <img className='rounded mt-4 img-fluid mb-4' src={gallery5} alt='dummyData' width='100%' height='800px' />
           </div>
       </div>
     )

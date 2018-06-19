@@ -36,7 +36,7 @@ class Snacks extends Component {
             </li>
           </ul>
         </div>
-        <img className='mb-4' width='100%' src={smallcourse}/>
+        <img className='rounded mb-4' width='100%' src={smallcourse}/>
       </div>)
   }
 }

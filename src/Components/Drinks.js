@@ -6,41 +6,69 @@ class Drinks extends Component {
   render() {
     return (
       <div>
-        <h6 className='font-weight-light text-center'><em>Alla mackor går att få på glutenfritt knäcke bröd</em></h6>
-      <div className="d-flex flex-wrap justify-content-center mt-2 mb-5">
-        <div className='p-4 text-center mx-2'>
-          <h4 className='pb-2 font-weight-light text-center border-bottom'>Kaffe & Te</h4>
-        <ul className='mt-4'>
-          <li>Te/kaffe</li>
-          <li>Espresso</li>
-          <li>Americano</li>
-          <li>Caffe latte</li>
-          <li>Cappuccino</li>
-          <li>Cortado</li>
-          <li>Macchiato</li>
-          <li>Mocca</li>
-          <li>Varmt choklad <em className='font-weight-light'>med vispgrädde</em></li>
-          <li>Chai</li>
-        </ul>
+        <h6 className='font-weight-light text-center'><em>Vi har också glutenfria och vegan alternativ</em></h6>
+      <div className='d-flex flex-wrap justify-content-around mt-5 mb-5'>
+        <div className='drinks rounded'>
+          <h5>Kaffe</h5>
+          <p>Te/kaffe</p>
+          <p>Espresso</p>
+          <p>Americano</p>
+          <p>Caffe latte</p>
+          <p>Cappuccino</p>
+          <p>Cortado</p>
+          <p>Macchiato</p>
+          <p>Mocca</p>
+          <p>Varmt choklad</p>
+          <p>Chai</p>
         </div>
-        <div className='p-4 text-center mx-2'>
-        <h4 className='pb-2 font-weight-light text-center border-bottom'>Annat</h4>
-        <ul className='mt-4'>
-          <li>Läsk</li>
-          <li>Apelsinjuice</li>
-          <li>San Pellegrino</li>
-          <li>Äppeljuice</li>
-          <li>Päron och ingefära lemonade</li>
-          <li>Lättöl</li>
-          <li>Lassi</li>
-        </ul>
+        <div className='drinks rounded'>
+          <h5>Telista</h5>
+          <p>Rooibos</p>
+          <p>Grönt jasmin</p>
+          <p>Grönt lime</p>
+          <p>Pepparmynta</p>
+          <p>Flamenco</p>
+          <p>Earl Grey</p>
+          <p>Kanel</p>
+          <p>Lapsang</p>
+          <p>Söder</p>
+          <p>Assam</p>
+        </div>
+        <div className='drinks rounded'>
+          <h5>Annat</h5>
+          <p>Läsk</p>
+          <p>Apelsinjuice</p>
+          <p>San Pellegrino</p>
+          <p>Äppeljuice</p>
+          <p>Päron & ingefära <br/> lemonade</p>
+          <p>Lättöl</p>
+          <p>Lassi</p>
+        </div>
+        <div className='drinks rounded'>
+          <h5>Öl</h5>
+          <p>Starobrno</p>
+          <p>Bistro lager</p>
+          <p>Brooklyn lager</p>
+          <p>Brooklyn ipa</p>
+          <p>Nils Oscar god lager</p>
+          <p>Celia</p>
+          <p>ESB</p>
+          <p>London pride</p>
+          <p>(alkoholfritt alternativ finns)</p>
+        </div>
+        <div className='drinks rounded'>
+          <h5>Vin</h5>
+          <h6>Rött</h6>
+          <p>Vinistella</p>
+          <h6>Vitt</h6>
+          <p>Kleine zalze</p>
+          <h6>Rosé</h6>
+          <p>Moncaro</p>
+          <h6>Bubbel</h6>
+          <p>Charles de Fère</p>
         </div>
       </div>
-      <div className='mt-5 mb-5'>
-        <h3 className='text-center font-weight-light'>Vi serverar också vin, öl och cider!</h3>
-          <h4 className='text-center font-weight-light'>Kom gärna förbi och se dagens meny</h4>
-        </div>
-        <img className='mb-4' width='100%' src={drinks}/>
+        <img className='rounded mb-4' width='100%' src={drinks}/>
     </div>)
   }
 }

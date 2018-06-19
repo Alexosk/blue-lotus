@@ -77,7 +77,7 @@ class ColdSandwich extends Component {
           </ul>
         </div>
       </div>
-      <img className='mb-4' width='100%' src={coldsandwich}/>
+      <img className='rounded mb-4' width='100%' src={coldsandwich}/>
     </div>
   }
 }

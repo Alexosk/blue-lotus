@@ -19,10 +19,10 @@ class MainNav extends Component {
   }
   render () {
     return (
-  <div className='mainNav d-flex my-auto'>
+  <div id='pattern' className='mainNav d-flex my-auto'>
     <ul className='Nav' width='100%'>
       <li className='ml-5'><img className='' src={flowerLogo} width='50' height='40'/></li>
-        <li className='text-uppercase text-dark ml-4'>Café&nbsp;Blå&nbsp;Lotus</li>
+        <li className='font-weight-bold text-uppercase text-dark ml-4'>Café&nbsp;Blå&nbsp;Lotus</li>
     </ul>
     <ul className='Nav mainMenu justify-content-end mr-5'>
       <li className=''>
@@ -38,7 +38,7 @@ class MainNav extends Component {
         <Link to='/historia' className='a mr-4 ml-2 text-uppercase text-dark'>Historia</Link>
       </li>
       <li>
-        <Link to='/about' className='a mr-4 ml-2 text-uppercase text-dark'>Om Oss</Link>
+        <Link to='/contact' className='a mr-4 ml-2 text-uppercase text-dark'>Kontakt</Link>
       </li>
     </ul>
     </div>)

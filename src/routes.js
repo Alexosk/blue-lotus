@@ -2,7 +2,7 @@ import Home from './Views/Home'
 import Meny from './Views/Meny'
 import PhotoAlbum from './Views/PhotoAlbum'
 import Story from './Views/Story'
-import About from './Views/About'
+import Contact from './Views/Contact'
 import ColdSandwich from './Components/ColdSandwich'
 import WarmSandwich from './Components/WarmSandwich'
 import Dishes from './Components/Dishes'
@@ -17,7 +17,7 @@ const routes = {
   {name: 'Meny', exact: false, path: '/meny', component: Meny},
   {name: 'PhotoAlbum', exact: false, path: '/gallery', component: PhotoAlbum},
   {name: 'Story', exact: false, path: '/historia', component: Story},
-  {name: 'About', exact: false, path: '/about', component: About}
+  {name: 'Contact', exact: false, path: '/contact', component: Contact}
 ],
   subMenu:[
   {name: 'Breakfast', exact: false, path: '/meny/breakfast', component: Breakfast},
