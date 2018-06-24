@@ -7,6 +7,7 @@ class Drinks extends Component {
     return (
       <div>
         <h6 className='font-weight-light text-center'><em>Vi har också glutenfria och vegan alternativ</em></h6>
+        <h2 className='text-center mt-2 p-0'>Dryck</h2>
       <div className='d-flex flex-wrap justify-content-around mt-5 mb-5'>
         <div className='drinks rounded'>
           <h5>Kaffe</h5>

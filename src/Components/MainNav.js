@@ -41,7 +41,8 @@ class MainNav extends Component {
         <Link to='/contact' className='a mr-4 ml-2 text-uppercase text-dark'>Kontakt</Link>
       </li>
     </ul>
-    </div>)
+    </div>
+    )
   }
 }
 

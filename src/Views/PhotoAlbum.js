@@ -1,30 +1,48 @@
 import React, {Component} from 'react'
+import ImageGallery from 'react-image-gallery';
 import images from '../images'
 let {gallery1, gallery2, gallery3, gallery4, gallery5} = images
 
 class PhotoAlbum extends Component {
-  render () {
-    return (
-      <div className='mt-4 mb-5 container d-flex flex-wrap'>
-        <div width='800px' height='800px'>
-        <img className='rounded mt-4 img-fluid' src={gallery1} alt='dummyData' width='100%' height='auto' />
-        </div>
-        <div width='800px' height='800px'>
-        <img className='rounded mt-4 img-fluid' src={gallery2} alt='dummyData' width='100%' height='auto' />
-        </div>
-        <div>
-          <img className='rounded mt-4 img-fluid' src={gallery3} alt='dummyData' width='100%' height='800px' />
-          </div>
-          <div>
-          <img className='rounded mt-4 img-fluid' src={gallery4} alt='dummyData' width='100%' height='800px' />
-          </div>
-          <div>
-          <img className='rounded mt-4 img-fluid mb-4' src={gallery5} alt='dummyData' width='100%' height='800px' />
-          </div>
-      </div>
-    )
+  render() {
+    const images = [
+      {
+        original: require('../images/meny/frukost/Lotus-13.png'),
+        thumbnail: require('../images/meny/frukost/Lotus-13.png'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-5.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-5.jpg'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-6.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-6.jpg'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-7.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-7.jpg'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-8.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-8.jpg'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-10.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-10.jpg'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-12.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-12.jpg'),
+      },
+      {
+        original: require('../images/meny/kakor/Lotus-23.jpg'),
+        thumbnail: require('../images/meny/kakor/Lotus-23.jpg'),
+      },
+    ]
+    return (<div className='mt-4 mb-5 container content p-4'>
+<ImageGallery items={images} showPlayButton = {false}/>
+    </div>)
   }
 }
-
 
 export default PhotoAlbum

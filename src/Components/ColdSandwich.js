@@ -9,9 +9,11 @@ class ColdSandwich extends Component {
       <h6 className='font-weight-light text-center'>
         <em>Alla mackor går att få på glutenfritt knäcke bröd</em>
       </h6>
+      <h2 className='text-center mt-2 p-2'>Kalla Mackor</h2>
       <div className="d-flex flex-wrap flex-column align-items-center mt-2">
         <div className='p-4 mx-2'>
-          <h4 className='pb-2 font-weight-light border-bottom border-dark'>Surdegs Mackor</h4>
+          <h4 className='pb-2 font-weight-light'>Surdegs Mackor</h4>
+          <hr className='mt-0' />
           <ul className='mt-4 mb-4'>
             <li className='mb-3'>
               <h5 className='font-weight-light'>
@@ -55,7 +57,8 @@ class ColdSandwich extends Component {
             </li>
           </ul>
           <div className='mt-4'>
-          <h4 className='pb-2 font-weight-light border-dark border-bottom'>Knäcke Mackor</h4>
+          <h4 className='pb-2 font-weight-light'>Knäcke Mackor</h4>
+          <hr className='mt-0' />
           </div>
           <ul className='mt-4'>
             <li className='mb-3'>

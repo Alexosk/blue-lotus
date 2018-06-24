@@ -8,6 +8,7 @@ class WarmSandwich extends Component {
     return (
       <div>
         <h6 className='font-weight-light px-2 text-center'><em>Alla mackor är Serverade på surdegsbröd och går att få på glutenfritt bröd</em></h6>
+        <h2 className='text-center mt-2 p-2'>Varma Mackor</h2>
         <div className='p-4 d-flex justify-content-center'>
           <ul>
             <li className='mb-3'>

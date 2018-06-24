@@ -1,6 +1,7 @@
 html, body {
   background-color: #A3C6C4;
   letter-spacing: 2px;
+  height: 100%;
 }
 
 main {
@@ -26,9 +27,9 @@ ul {
   padding: 0;
 }
 
-nav {
+/* nav {
   font-size: 20px;
-}
+} */
 
 .Nav {
   margin: 0.5em;
@@ -58,7 +59,7 @@ nav {
   font-weight: lighter;
 }
 .breakfast {
-  border: 1px solid #ECF1F1;
+  border: 1px solid #b8d3d4;
   padding: 1em;
   width: 240px;
 
@@ -71,7 +72,7 @@ nav {
   line-height: 30px;
 }
 .drinks {
-  border: 1px solid #ECF1F1;
+  border: 1px solid #b8d3d4;
   width: 200px;
   padding: 1em;
 }
