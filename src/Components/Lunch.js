@@ -7,30 +7,30 @@ class Lunch extends Component {
     return (
       <div className='content'>
         <h6 className='font-weight-light text-center'><em>Flesta rätter går att göra veganska eller glutenfria, fråga gärna personalen</em></h6>
-      <h2 className='text-center mt-2 p-2'>Lunch</h2>
+      <h2 className='text-center mt-2 p-2 font-weight-bold'>Lunch</h2>
       <div className='d-flex justify-content-center'>
         <h6 className='font-weight-light'>
-          <p className='text-center'><b>Mån-Fre:</b> 11-14</p>
+          <p className='text-center'><span className='font-weight-bold'>Mån-Fre:</span> 11:00-14:00</p>
         </h6>
       </div>
       <div className='d-flex justify-content-around flex-column'>
         <ul className='d-flex flex-column flex-wrap'>
-          <li className='mb-3 pb-1 text-center'>
-            <h5 className='font-weight-light'>Soppa med ostmacka</h5>
+          <li className='h5 pb-1 text-center'>
+            <p className='font-weight-light'>&#3866; Soppa med ostmacka</p>
           </li>
-          <li className='mb-3 pb-1 text-center'>
-            <h5 className='font-weight-light'>Paj med sallad och snittar</h5>
+          <li className='h5 pb-1 text-center'>
+            <p className='font-weight-light'>&#3866; Paj med sallad och snittar</p>
           </li>
-          <li className='mb-3 pb-1 text-center'>
-            <h5 className='font-weight-light'>Dagens special</h5>
+          <li className='h5 pb-1 text-center'>
+            <p className='font-weight-light'>&#3866; Dagens special</p>
           </li>
-          <li className='mb-4 pb-1 text-center'>
-            <h5 className='font-weight-light'>Valfri varm macka med sallad</h5>
+          <li className='h5 pb-1 text-center'>
+            <p className='font-weight-light'>&#3866; Valfri varm macka med sallad</p>
           </li>
           <h6 className='text-center font-weight-light mt-4'>Citrondryck & kaffe/te/espresso ingår</h6>
         </ul>
       </div>
-      <img className='rounded mb-4' src={food} width='100%'/>
+      <img className='rounded mb-4' src={food} width='100%' alt='Lunch'/>
     </div>)
   }
 }

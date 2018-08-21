@@ -1,9 +1,8 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './MainNavigation.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import images from '../../images'
-let {logo, flowerLogo} = images
-
+let {flowerLogo} = images
 
 const MainNavigation = props => (
     <div>
@@ -14,18 +13,18 @@ const MainNavigation = props => (
           </div>
           <div className='navigation__logo'>
               <a href='/'>
-                  <img className='logo' src={flowerLogo} width='50' height='40'/>
-                  <h5>Café Blå Lotus</h5>
+                  <img className='logo' src={flowerLogo} width='50' height='40' alt='Restaurant logo'/>
+                  <h5 className=''>Café Blå Lotus</h5>
               </a>
           </div>
           <div className='spacer' />
           <div className='navigation-items'>
             <ul>
-              <li><a href='/'>Hem</a></li>
-              <li><a href='/meny/breakfast'>Meny</a></li>
-              <li><a href='/gallery'>Galleri</a></li>
-              <li><a href='/historia'>Historia</a></li>
-              <li><a href='/contact'>Kontakt</a></li>
+              <li><a className='' href='/'>Hem</a></li>
+              <li><a className='' href='/meny/breakfast'>Meny</a></li>
+              <li><a className='' href='/gallery'>Galleri</a></li>
+              <li><a className='' href='/historia'>Historia</a></li>
+              <li><a className='' href='/contact'>Kontakt</a></li>
             </ul>
           </div>
         </nav>

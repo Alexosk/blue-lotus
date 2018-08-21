@@ -8,39 +8,39 @@ class WarmSandwich extends Component {
     return (
       <div>
         <h6 className='font-weight-light px-2 text-center'><em>Alla mackor är Serverade på surdegsbröd och går att få på glutenfritt bröd</em></h6>
-        <h2 className='text-center mt-2 p-2'>Varma Mackor</h2>
+        <h2 className='text-center mt-2 p-2 font-weight-bold'>Varma Mackor</h2>
         <div className='p-4 d-flex justify-content-center'>
           <ul>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Atena: </b> Skinka, dijon, dragon, purjo, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Atena:</span> Skinka, dijon, dragon, purjo, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Freja: </b> Persiljeröra, chèvre, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Freja:</span> Persiljeröra, chèvre, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Hermes: </b> Skinka, feta, purjo, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Hermes:</span> Skinka, feta, purjo, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Hugin: </b> Salami, chèvre, rödlök, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Hugin:</span> Salami, chèvre, rödlök, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Shiva: </b> Vitlökssmör, feta, champinjon, rödlök, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Shiva:</span> Vitlökssmör, feta, champinjon, rödlök, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Pan: </b> Kalkon, soltorkade tomater, rödlök, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Pan:</span> Kalkon, soltorkade tomater, rödlök, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Abdalla: </b> Tonfiskröra, rödlök, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Abdalla:</span> Tonfiskröra, rödlök, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'><b>Lotus special: </b> Pesto, feta, tomat, ost</h5>
+              <h5 className='font-weight-light'><span className='font-weight-bold'>Lotus special:</span> Pesto, feta, tomat, ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='adress font-weight-light'><b>Lilith: </b> Persiljeröra, soltorkade tomater, champinjon,<br /> rödlök, tomat, rostade frön <Badge color="success" pill>Vegan</Badge></h5>
+              <h5 className='adress font-weight-light'><span className='font-weight-bold'>Lilith:</span> Persiljeröra, soltorkade tomater, champinjon,<br /> rödlök, tomat, rostade frön <Badge className='pill' pill={true}>Vegan</Badge></h5>
             </li>
           </ul>
         </div>
-        <img className='rounded mb-4' width='100%' src={warmsandwich}/>
+        <img className='rounded mb-4' width='100%' src={warmsandwich} alt='Warm Sandwich'/>
       </div>)
   }
 }
