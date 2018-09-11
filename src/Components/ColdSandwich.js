@@ -14,44 +14,44 @@ class ColdSandwich extends Component {
         <div className='p-4 mx-2'>
           <h4 className='pb-2 font-weight-bold'>Surdegs Mackor</h4>
           <hr className='mt-0' />
-          <ul className='mt-4 mb-4'>
+          <ul className='mt-4 mb-4 menu-list'>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Allahs gåva:
                 </span> Ost</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Kali:
-                </span> Persiljeröra, soltorkade tomater <Badge className='pill' pill={true}>Vegan</Badge>
+                </span> Persiljeröra, soltorkade tomater <div><Badge className='pill' pill={true}>Vegan</Badge></div>
               </h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Hades hämnd:
                 </span> Skinka, ost, dijon
               </h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Nirvana:
-                </span> Hummus <Badge className='pill' pill={true}>Vegan</Badge>
+                </span> Hummus <div><Badge className='pill' pill={true}>Vegan</Badge></div>
               </h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Magre Memeth:
                 </span> Feta, pesto, soltorkade tomater
               </h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Maya:
                 </span> Tonfiskröra
               </h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Fatimas drömmar:
                 </span> Persiljeröra, feta, tomat, rödlök</h5>
             </li>
@@ -60,21 +60,21 @@ class ColdSandwich extends Component {
           <h4 className='pb-2 font-weight-bold'>Knäcke Mackor</h4>
           <hr className='mt-0' />
           </div>
-          <ul className='mt-4'>
+          <ul className='mt-4 menu-list'>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Ra’s skörd:
                 </span> Ägg, purjo, kaviar</h5>
             </li>
             <li className='mb-3'>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Isis synd:
                 </span> Persiljeröra, feta, tomat, rödlök</h5>
             </li>
             <li className=''>
-              <h5 className='font-weight-light'>
+              <h5 className='font-weight-light menu-item'>
                 <span className='font-weight-bold'>Artemis:
-                </span> Hummus <Badge className='pill' pill={true}>Vegan</Badge>
+                </span> Hummus <div><Badge className='pill' pill={true}>Vegan</Badge></div>
               </h5>
             </li>
           </ul>

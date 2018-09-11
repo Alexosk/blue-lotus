@@ -18,14 +18,14 @@ class MenyNav extends Component {
     return (
       <div>
         <div className='mt-4'>
-          <div className='content p-4 d-flex justify-content-center align-content-center flex-wrap'>
-            <Link className='m-1 btn' to={'/meny/breakfast'}>Frukost</Link>
-            <Link className='m-1 btn' to={'/meny/lunch'}>Lunch</Link>
-            <Link className='m-1 btn' to={'/meny/dishes'}>Maträtter</Link>
-            <Link className='m-1 btn' to={'/meny/coldsandwich'}>Kalla Mackor</Link>
-            <Link className='m-1 btn' to={'/meny/warmsandwich'}>Varma Mackor</Link>
-            <Link className='m-1 btn' to={'/meny/snacks'}>Smått Och Gott</Link>
-            <Link className='m-1 btn' to={'/meny/drinks'}>Dryck</Link>
+          <div className='content p-4 d-flex justify-content-center flex-wrap'>
+            <Link className='btn m-1' to={'/meny/breakfast'}>Frukost</Link>
+            <Link className='btn m-1' to={'/meny/lunch'}>Lunch</Link>
+            <Link className='btn m-1' to={'/meny/dishes'}>Maträtter</Link>
+            <Link className='btn m-1' to={'/meny/coldsandwich'}>Kalla Mackor</Link>
+            <Link className='btn m-1' to={'/meny/warmsandwich'}>Varma Mackor</Link>
+            <Link className='btn m-1' to={'/meny/snacks'}>Smått Och Gott</Link>
+            <Link className='btn m-1' to={'/meny/drinks'}>Dryck</Link>
           </div>
           <div className='content d-flex justify-content-center'>
             {subMenu}

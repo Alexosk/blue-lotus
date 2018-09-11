@@ -104,19 +104,20 @@ ul {
 }
 @media (max-width: 630px) {
   .one {
-    order: 2;
-    margin-bottom: 1em;
-  }
-  .two {
     order: 1;
     margin-bottom: 1em;
   }
+  .two {
+    order: 3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
   .two img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   .three {
-    order: 3;
+    order: 2;
     margin-bottom: 1em;
   }
   .breakfast-parent {
@@ -134,7 +135,31 @@ ul {
   .image-gallery {
     margin-bottom: 1em;
   }
+  .content h4 {
+    text-align: center;
+  }
+  .content h5 {
+    font-size: 18px;
+  }
+  .menu-list h5 {
+    font-size: 16px;
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .lunch-time {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  h6 em {
+    font-size: 14px;
+  }
+
 }
+
 .img-thumbnail {
   background-color: #A3C6C4;
 }

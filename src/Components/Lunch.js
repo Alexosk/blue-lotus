@@ -10,7 +10,7 @@ class Lunch extends Component {
       <h2 className='text-center mt-2 p-2 font-weight-bold'>Lunch</h2>
       <div className='d-flex justify-content-center'>
         <h6 className='font-weight-light'>
-          <p className='text-center'><span className='font-weight-bold'>Mån-Fre:</span> 11:00-14:00</p>
+          <p className='text-center lunch-time'><span className='font-weight-bold'>Mån-Fre:</span> 11:00-14:00</p>
         </h6>
       </div>
       <div className='d-flex justify-content-around flex-column'>
