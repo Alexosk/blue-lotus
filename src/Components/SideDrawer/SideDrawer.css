@@ -41,7 +41,7 @@
   text-decoration: none;
   color: #CDEBEB;
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
   .side-drawer {
     display: none;
   }

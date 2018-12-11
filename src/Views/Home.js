@@ -1,15 +1,36 @@
-import React, {Component} from 'react'
-import images from '../images'
-let {indexLotus} = images
+import React, { Component } from "react";
+import Media from "react-media";
+import images from "../images";
+let { indexLotus, indexLotusMobile } = images;
 
 class Home extends Component {
-  render () {
+  render() {
     return (
-      <div className='index-photo'>
-          <img className='index-photo img-fluid' height='auto' width='100%' alt='Café Blå Lotus' src={indexLotus} />
+      <div className="index-photo">
+        <Media query="(max-width: 1000px)">
+          {matches =>
+            matches ? (
+              <img
+                className="img-fluid"
+                height="auto"
+                width="100%"
+                alt="Café Blå Lotus"
+                src={indexLotusMobile}
+              />
+            ) : (
+              <img
+                className="img-fluid"
+                height="auto"
+                width="100%"
+                alt="Café Blå Lotus"
+                src={indexLotus}
+              />
+            )
+          }
+        </Media>
       </div>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

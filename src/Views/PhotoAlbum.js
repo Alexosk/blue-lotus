@@ -1,63 +1,48 @@
 import React, {Component} from 'react';
-import images from '../images'
-let {indexLotus} = images
+import ImageItem from '../Components/ImageItem';
+import images from '../images';
+let {img1, img2, img3, img4, img5, img6, img7, img8, img9, img10 } = images
 
 
 
 class PhotoAlbum extends Component {
   render() {
-    const images = [
-      {
-        original: require('../images/meny/frukost/Lotus-13.png'),
-        thumbnail: require('../images/meny/frukost/Lotus-13.png')
-      }, {
-        original: require('../images/meny/kakor/Lotus-5.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-5.jpg')
-      }, {
-        original: require('../images/meny/kakor/Lotus-6.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-6.jpg')
-      }, {
-        original: require('../images/meny/kakor/Lotus-7.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-7.jpg')
-      }, {
-        original: require('../images/meny/kakor/Lotus-8.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-8.jpg')
-      }, {
-        original: require('../images/meny/kakor/Lotus-10.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-10.jpg')
-      }, {
-        original: require('../images/meny/kakor/Lotus-12.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-12.jpg')
-      },
-      {
-        original: require('../images/meny/kakor/Lotus-23.jpg'),
-        thumbnail: require('../images/meny/kakor/Lotus-23.jpg'),
-      }
-    ]
     return (
       <div className='image-gallery mt-4 container content p-2'>
       <h1 className='text-center'>Galleri</h1>
       <p className='text-center'> Fotograf: <a href='https://www.instagram.com/sarajosefin_fotografi_/'>Josefin Hasselberg</a>
       </p>
         <div className='row p-3'>
-           <div className='col-lg-4 col-md-6 p-2 m-0'>
-             <img className='rounded' src={indexLotus} width='100%' height='auto' alt='images'/>
-           </div>
-           <div className='col-lg-4 col-md-6 p-2 m-0'>
-             <img className='rounded' src={indexLotus} width='100%' height='auto' alt='images'/>
-           </div>
-           <div className='col-lg-4 col-md-6 p-2 m-0'>
-           <img className='rounded' src={indexLotus} width='100%' height='auto' alt='images'/>
-         </div>
-         <div className='col-lg-4 col-md-6 p-2 m-0'>
-           <img className='rounded' src={indexLotus} width='100%' height='auto' alt='images'/>
-         </div>
-         <div className='col-lg-4 col-md-6 p-2 m-0'>
-           <img className='rounded' src={indexLotus} width='100%' height='auto' alt='images'/>
-         </div>
-         <div className='col-lg-4 col-md-6 p-2 m-0'>
-         <img className='rounded' src={indexLotus} width='100%' height='auto' alt='images'/>
-       </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0' >
+            <img className='rounded' src={img1} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img2} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img3} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img4} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img5} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img6} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img7} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img8} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img9} width='100%' height='auto' alt=""/>
+          </div>
+          <div className='col-lg-6 col-md-6 p-2 m-0'>
+            <img className='rounded' src={img10} width='100%' height='auto' alt=""/>
+          </div>
         </div>
     </div>)
   }

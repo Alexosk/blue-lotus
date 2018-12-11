@@ -1,25 +1,45 @@
 export default {
-  facebook: require('./images/facebook.png'),
-  instagram: require('./images/instagram.png'),
-  facebook2: require('./images/facebook2.png'),
-  instagram2: require('./images/instagram2.png'),
-  logo: require('./images/blue-logo.png'),
-  flowerLogo: require('./images/flower-logo.png'),
-  indexLotus: require('./images/the-place/Lotus-26.jpg'),
-  breakfast: require('./images/meny/frukost/Lotus-13.png'),
-  food: require('./images/meny/mat/Lotus-20.jpg'),
-  coldsandwich: require('./images/meny/mackor/Lotus-18.png'),
-  fridaOchCecilia: require('./images/F-C/Lotus-53.jpg'),
-  warmsandwich: require('./images/meny/mackor/Lotus-15.jpg'),
-  dinner: require('./images/meny/mackor/Lotus-16.png'),
-  smallcourse: require('./images/meny/Lotus-19.png'),
-  drinks: require('./images/meny/Lotus-44.jpg'),
-  menuPhoto: require('./images/the-place/Lotus-28.jpg'),
-  //Gallery photos
-  gallery1: require('./images/the-place/Lotus-2.jpg'),
-  gallery2: require('./images/the-place/Lotus-3.jpg'),
-  gallery3: require('./images/the-place/Lotus-4.jpg'),
-  gallery4: require('./images/the-place/Lotus-9.jpg'),
-  gallery5: require('./images/the-place/Lotus-11.jpg')
+  //Social Media icons
+  facebook2: require("./images/facebook2.png"),
+  instagram2: require("./images/instagram2.png"),
 
-}
+  //Logos
+  logo: require("./images/blue-logo.png"),
+  flowerLogo: require("./images/flower-logo.png"),
+
+  //Frontpage Image
+  indexLotus: require("./images/startPage-dator.jpg"),
+  indexLotusMobile: require("./images/startPage-mobil.jpg"),
+
+  //Menu photos
+  breakfast: require("./images/mat/frukost1.jpg"),
+  breakfastMobile: require("./images/mat/frukost-mobil.jpg"),
+  lunch: require("./images/mat/lunch-dator(josefin).jpg"),
+  lunch1: require("./images/mat/lunch-dator(FC).jpg"),
+  lunchMobile: require("./images/mat/lunch-mobil.jpg"),
+  coldsandwich: require("./images/mat/coldSandwich-dator.jpg"),
+  coldsandwichMobile: require("./images/mat/coldSandwich-mobil.jpg"),
+  warmsandwich: require("./images/mat/warmSandwich-dator.jpg"),
+  warmSandwichMobile: require("./images/mat/warmSandwich-mobil.jpg"),
+  food: require("./images/mat/food-dator.jpg"),
+  foodMobile: require("./images/mat/food-mobil.jpg"),
+  snacks: require("./images/mat/snacks-dator.jpg"),
+  snacksMobile: require("./images/mat/snacks-mobil.jpg"),
+  drinks: require("./images/drinks-dator.jpg"),
+  drinksMobile: require("./images/mat/drinks-mobil.jpg"),
+
+  //Frida och Cecilia
+  fridaOchCecilia: require("./images/frida&cecilia2.jpg"),
+
+  //Gallery photos
+  img1: require("./images/startPage-dator.jpg"),
+  img2: require("./images/2Lotus4-dator.jpg"),
+  img3: require("./images/2Lotus91.jpg"),
+  img4: require("./images/2Lotus93.jpg"),
+  img5: require("./images/2Lotus98.jpg"),
+  img6: require("./images/2Lotus992.jpg"),
+  img7: require("./images/frida&cecilia.jpg"),
+  img8: require("./images/frontImage.jpg"),
+  img9: require("./images/mat/lunch-dator(josefin).jpg"),
+  img10: require("./images/mat/snacks-dator.jpg")
+};

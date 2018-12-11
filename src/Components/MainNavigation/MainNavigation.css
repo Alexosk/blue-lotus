@@ -55,7 +55,7 @@ header {
 }
 .navigation-items a:hover,
 .navigation-items a:active {
-  color: grey;
+  color: gray;
   text-decoration: none;
 }
 @media (max-width: 960px) {

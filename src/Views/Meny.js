@@ -1,23 +1,18 @@
-import React, {Component} from 'react'
-import MenuNav from '../Components/MenuNav'
-import images from '../images'
-let {menuPhoto} = images
-
-
+import React, { Component } from "react";
+import MenuNav from "../Components/MenuNav";
+import images from "../images";
+let { menuPhoto } = images;
 
 class Meny extends Component {
-  render () {
-
+  render() {
     return (
-      <div className='menu-container'>
-    <div className='content mb-5 container'>
-      <MenuNav className='' />
-        <div>
-        <img src={menuPhoto} width='100%' height='auto'/>
+      <div className="">
+        <div className="container content mb-5 ">
+          <MenuNav className="" />
         </div>
-    </div>
-  </div>)
+      </div>
+    );
   }
 }
 
-export default Meny
+export default Meny;

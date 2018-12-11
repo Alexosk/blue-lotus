@@ -1,29 +1,33 @@
 html {
-  background-color: #A3C6C4;
+  background-color: #a3c6c4;
   letter-spacing: 2px;
   height: 100%;
   overflow-x: hidden;
 }
 .btn {
   color: #000;
-  border: 2px solid #A3C6C4 !important;
+  border: 2px solid #a3c6c4 !important;
   background-color: #c2f0c2;
 }
 .btn:hover,
 .btn:active {
-  background-color: #A3C6C4;
+  background-color: #a3c6c4;
   color: #000;
 }
 .pill {
-  background-color: #98E098 !important;
-  color: whitesmoke !important;
+  background-color: #98e098 !important;
+  color: #f4f4f4 !important;
 }
 main {
   flex: 1 0 auto;
   overflow-x: hidden;
-  background-color: #A3C6C4;
+  background-color: #a3c6c4;
 }
 body {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-style: normal;
   min-height: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -35,15 +39,12 @@ ul {
   padding: 0;
 }
 .container {
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: 1px;
-  font-weight: 300;
-  font-style: normal;
-  background-color: #A3C6C4;
+  background-color: #a3c6c4;
+  border-radius: 5px;
   color: black;
 }
 .content {
-  background-color: #CDEBEB;
+  background-color: #cdebeb;
 }
 #app div {
   height: 100%;
@@ -53,10 +54,9 @@ ul {
   justify-content: space-between;
 }
 .breakfast {
-  border: 1px solid #A3C6C4;
+  border: 1px solid #a3c6c4;
   padding: 1em;
   width: 240px;
-
 }
 .breakfast h6 {
   line-height: 25px;
@@ -66,7 +66,7 @@ ul {
   line-height: 30px;
 }
 .drinks {
-  border: 1px solid #A3C6C4;
+  border: 1px solid #a3c6c4;
   width: 200px;
   padding: 1em;
 }
@@ -92,7 +92,7 @@ ul {
   font-size: 10px;
 }
 .footer {
-  background-color: #A3C6C4;
+  background-color: #a3c6c4;
   color: black;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -123,9 +123,6 @@ ul {
   .breakfast-parent {
     justify-content: center;
   }
-  .the-bosses {
-    width: 100%;
-  }
   .index-photo {
     margin-bottom: 1.5em;
   }
@@ -134,9 +131,6 @@ ul {
   }
   .image-gallery {
     margin-bottom: 1em;
-  }
-  .content h4 {
-    text-align: center;
   }
   .content h5 {
     font-size: 18px;
@@ -157,11 +151,10 @@ ul {
   h6 em {
     font-size: 14px;
   }
-
 }
 
 .img-thumbnail {
-  background-color: #A3C6C4;
+  background-color: #a3c6c4;
 }
 .grid-item {
   background: #ccc;
