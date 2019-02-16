@@ -6,54 +6,16 @@ class Contact extends Component {
   render() {
     return (
       <div className="mt-4 pt-5 content container">
-        <div className="d-flex justify-content-center mb-4">
-          <img
-            className="mt-5"
-            alt="Blue Lotus logo"
-            src={logo}
-            width="250"
-            height="250"
-          />
-        </div>
-        <div
-          className="d-flex flex-column justify-content-around flex-wrap"
-          width="100%"
-        >
+        <div className="d-flex flex-column justify-content-around flex-wrap">
           <ul className="p-4 text-center">
-            <h2 className="font-weight-bold">Om Oss</h2>
+            <h2 className="font-weight-bold">Kontakt</h2>
             <li>
               <h5 className="font-weight-light adress">
-                <span className="font-weight-bold">Adress:</span>{" "}
-                Katarina&nbsp;Bangata&nbsp;21 <br /> 116 39 Stockholm
+                Katarina Bangata 21 <br /> 116 39 Stockholm
               </h5>
             </li>
             <li>
-              <h5 className="font-weight-light">
-                <span className="font-weight-bold">Tel:</span> +46 864 450 43
-              </h5>
-            </li>
-          </ul>
-          <ul className=" text-center p-4">
-            <h2 className="font-weight-bold">Öppettider</h2>
-            <li>
-              <h5 className="font-weight-light">
-                <span className="font-weight-bold">Mån-Tis:</span> 08:30 - 20:00
-              </h5>
-            </li>
-            <li>
-              <h5 className="font-weight-light">
-                <span className="font-weight-bold">Ons-Fre:</span> 08:30 - 21:00
-              </h5>
-            </li>
-            <li>
-              <h5 className="font-weight-light">
-                <span className="font-weight-bold">Lör:</span> 09:30 - 19:00
-              </h5>
-            </li>
-            <li>
-              <h5 className="font-weight-light">
-                <span className="font-weight-bold">Sön:</span> 09:30 - 18:00
-              </h5>
+              <h5 className="font-weight-light">+46 864 450 43</h5>
             </li>
           </ul>
           <ul className="justify-content-center p-4 d-flex">

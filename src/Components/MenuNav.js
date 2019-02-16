@@ -32,7 +32,7 @@ class MenyNav extends Component {
               Varma Mackor
             </Link>
             <Link className="btn m-1" to={"/meny/snacks"}>
-              Smått Och Gott
+              Smått & Gott
             </Link>
             <Link className="btn m-1" to={"/meny/drinks"}>
               Dryck

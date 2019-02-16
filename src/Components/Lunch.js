@@ -7,12 +7,6 @@ class Lunch extends Component {
   render() {
     return (
       <div className="content">
-        <h6 className="font-weight-light text-center">
-          <em>
-            Flesta rätter går att göra veganska eller glutenfria, fråga gärna
-            personalen
-          </em>
-        </h6>
         <h2 className="text-center mt-2 p-2 font-weight-bold">Lunch</h2>
         <div className="d-flex justify-content-center">
           <h6 className="font-weight-light">
@@ -21,48 +15,56 @@ class Lunch extends Component {
             </p>
           </h6>
         </div>
+        <div className="menu-image-padding">
+          <Media query="(max-width: 630px)">
+            {matches =>
+              matches ? (
+                <img
+                  className="rounded mb-4 img-fluid"
+                  width="100%"
+                  alt="Café Blå Lotus"
+                  src={lunchMobile}
+                />
+              ) : (
+                <img
+                  className="rounded mb-4"
+                  src={lunch1}
+                  width="100%"
+                  alt="Lunch"
+                />
+              )
+            }
+          </Media>
+        </div>
         <div className="d-flex justify-content-around flex-column">
           <ul className="d-flex flex-column flex-wrap">
             <li className="h5 pb-1 text-center">
               <p className="font-weight-light">&#3866; Soppa med ostmacka</p>
             </li>
-            <li className="h5 pb-1 text-center">
+            <li className="h5 text-center">
               <p className="font-weight-light">
                 &#3866; Paj med sallad och snittar
               </p>
             </li>
-            <li className="h5 pb-1 text-center">
+            <li className="h5 text-center">
               <p className="font-weight-light">&#3866; Dagens special</p>
             </li>
-            <li className="h5 pb-1 text-center">
+            <li className="h5 text-center">
               <p className="font-weight-light">
                 &#3866; Valfri varm macka med sallad
               </p>
             </li>
-            <h6 className="text-center font-weight-light mt-4">
+            <h6 className="text-center font-weight-bold">
               Citrondryck & kaffe/te/espresso ingår
             </h6>
           </ul>
+          <h6 className="font-weight-light text-center mb-5">
+            <em>
+              De flesta rätter går att göra veganska eller glutenfria, <br />
+              fråga gärna personalen
+            </em>
+          </h6>
         </div>
-        <Media query="(max-width: 630px)">
-          {matches =>
-            matches ? (
-              <img
-                className="rounded mb-4 img-fluid"
-                width="100%"
-                alt="Café Blå Lotus"
-                src={lunchMobile}
-              />
-            ) : (
-              <img
-                className="rounded mb-4"
-                src={lunch1}
-                width="100%"
-                alt="Lunch"
-              />
-            )
-          }
-        </Media>
       </div>
     );
   }

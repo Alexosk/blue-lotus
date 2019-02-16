@@ -16,7 +16,7 @@ class Footer extends Component {
           <div className="two d-flex flex-column">
             <p className="mb-1 text-center font-weight-bold">Café Blå Lotus</p>
             <div className="mb-2 d-flex justify-content-center">
-              <a href="https://www.facebook.com">
+              <a href="https://www.facebook.com/cafeblalotusstockholm/">
                 <img
                   className="mr-1"
                   src={facebook2}
@@ -35,14 +35,13 @@ class Footer extends Component {
                 />
               </a>
             </div>
-            <h6 className="copyright">© 2018 ALL RIGHTS RESERVED</h6>
+            <h6 className="copyright">© 2019 ALL RIGHTS RESERVED</h6>
           </div>
           <div className="three">
-            <p className="m-0 text-right font-weight-bold">Öppettider</p>
-            <p className="m-0"> Mån-Tis: 8:30-20:00</p>
-            <p className="m-0">Ons-Fre: 8:30-21:00</p>
-            <p className="m-0 text-right"> Lör: 9:30-19:00</p>
-            <p className="text-right m-0">Sön: 9:30-18:00</p>
+            <p className="m-0 font-weight-bold">Öppettider</p>
+            <p className="m-0"> Mån-Fre 8:30-20:00</p>
+            <p className="m-0"> Lör 9:30-19:00</p>
+            <p className="m-0">Sön 9:30-18:00</p>
           </div>
         </div>
       </div>

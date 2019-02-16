@@ -14,10 +14,6 @@ html {
   background-color: #a3c6c4;
   color: #000;
 }
-.pill {
-  background-color: #98e098 !important;
-  color: #f4f4f4 !important;
-}
 main {
   flex: 1 0 auto;
   overflow-x: hidden;
@@ -49,24 +45,25 @@ ul {
 #app div {
   height: 100%;
 }
-
-.breakfast-parent {
-  justify-content: space-between;
-}
 .breakfast {
-  border: 1px solid #a3c6c4;
   padding: 1em;
-  width: 240px;
+  font-size: 1.25rem;
+  width: 100%;
 }
 .breakfast h6 {
   line-height: 25px;
   font-size: 16px;
 }
+.menu-image-padding {
+  padding: 1em;
+}
+.veganBefore {
+  display: none;
+}
 .adress {
   line-height: 30px;
 }
 .drinks {
-  border: 1px solid #a3c6c4;
   width: 200px;
   padding: 1em;
 }
@@ -80,7 +77,7 @@ ul {
   margin: 0;
 }
 .extras {
-  font-size: 13px;
+  font-size: 1rem;
 }
 .history {
   width: 70%;
@@ -103,6 +100,15 @@ ul {
   text-transform: uppercase;
 }
 @media (max-width: 630px) {
+  .menu-image-padding {
+    padding: 0.5em;
+  }
+  .veganBefore {
+    display: block;
+  }
+  .veganAfter {
+    display: none;
+  }
   .one {
     order: 1;
     margin-bottom: 1em;
@@ -142,6 +148,10 @@ ul {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .veganMenuItem {
+    display: flex;
+    justify-content: center;
   }
   .lunch-time {
     display: flex;

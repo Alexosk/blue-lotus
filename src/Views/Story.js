@@ -17,15 +17,9 @@ class Story extends Component {
           </div>
           <div>
             <p className="text-center mt-2 m-0">Frida och Cecilia</p>
-            <p className="text-center">
-              Fotograf:
-              <a href="https://www.instagram.com/sarajosefin_fotografi_/">
-                Josefin Hasselberg
-              </a>
-            </p>
           </div>
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center mt-4">
           <div className="history d-flex flex-column">
             <p>
               Det började på dansgolvet i början av 90-talet. Vi, Frida och

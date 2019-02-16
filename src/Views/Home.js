@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <div className="index-photo">
-        <Media query="(max-width: 1000px)">
+        <Media query="(max-width: 1300px)">
           {matches =>
             matches ? (
               <img
