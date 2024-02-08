@@ -3,9 +3,16 @@ import "./MainNavigation.css";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 import { Link } from "react-router-dom";
 import images from "../../images";
+
 let { flowerLogo } = images;
 
-const MainNavigation = props => (
+const NavigationItem = ({ to, children }) => (
+  <li>
+    <Link to={to}>{children}</Link>
+  </li>
+);
+
+export const MainNavigation = (props) => (
   <div>
     <header className="navigation__bar">
       <nav className="main__Navigation">
@@ -27,26 +34,14 @@ const MainNavigation = props => (
         <div className="spacer" />
         <div className="navigation-items">
           <ul>
-            <li>
-              <Link to="/">Hem</Link>
-            </li>
-            <li>
-              <Link to="/meny/breakfast">Meny</Link>
-            </li>
-            <li>
-              <Link to="/gallery">Galleri</Link>
-            </li>
-            <li>
-              <Link to="/historia">Historia</Link>
-            </li>
-            <li>
-              <Link to="/contact">Kontakt</Link>
-            </li>
+            <NavigationItem to="/">Hem</NavigationItem>
+            <NavigationItem to="/meny/breakfast">Meny</NavigationItem>
+            <NavigationItem to="/gallery">Galleri</NavigationItem>
+            <NavigationItem to="/historia">Historia</NavigationItem>
+            <NavigationItem to="/contact">Kontakt</NavigationItem>
           </ul>
         </div>
       </nav>
     </header>
   </div>
 );
-
-export default MainNavigation;

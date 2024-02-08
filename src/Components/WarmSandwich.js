@@ -1,108 +1,83 @@
-import React, { Component } from "react";
+import React from "react";
 import Media from "react-media";
 import images from "../images";
-let { warmsandwich, warmSandwichMobile } = images;
+import { MenuItem } from "./MenuItem";
 
-class WarmSandwich extends Component {
-  render() {
-    let veganBefore = <span className="font-weight-bold">(V)</span>;
-    let veganAfter = <span className="font-weight-bold">(V)</span>;
+const { warmsandwich, warmSandwichMobile } = images;
 
-    return (
-      <div>
-        <h2 className="text-center mt-2 p-2 font-weight-bold">Varma Mackor</h2>
-        <div className="menu-image-padding">
-          <Media query="(max-width: 630px)">
-            {(matches) =>
-              matches ? (
-                <img
-                  className="rounded img-fluid"
-                  width="100%"
-                  alt="Café Blå Lotus"
-                  src={warmSandwichMobile}
-                />
-              ) : (
-                <img
-                  className="rounded"
-                  width="100%"
-                  src={warmsandwich}
-                  alt="Warm Sandwich"
-                />
-              )
-            }
-          </Media>
-        </div>
-        <div className="p-4 pt-0 d-flex justify-content-center">
-          <ul className="menu-list">
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold menu-item">Athena</span>{" "}
-                Skinka, dijon, dragon, purjo, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Freja</span> Persiljeröra,
-                chèvre, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Hermes</span> Skinka, feta,
-                purjo, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Hugin</span> Salami, chèvre,
-                rödlök, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Shiva</span> Vitlökssmör,
-                feta, champinjon, rödlök, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Pan</span> Kalkon, soltorkade
-                tomater, rödlök, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Abdallah</span> Tonfiskröra,
-                rödlök, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold">Lotus special</span> Pesto,
-                feta, tomat & ost
-              </h5>
-            </li>
-            <li className="mb-3">
-              <h5 className="font-weight-light menu-item">
-                <span className="font-weight-bold veganMenuItem">
-                  Lilith <span className="veganBefore">{veganBefore}</span>
-                </span>
-                Persiljeröra, soltorkade tomater, champinjon,
-                <br /> rödlök, tomat, rostade frön & ruccola{" "}
-                <span className="veganAfter">{veganAfter}</span>
-              </h5>
-            </li>
-            <h6 className="font-weight-light px-2 text-center my-4">
-              <em>
-                Alla mackor serveras på surdegsbröd och <br /> går att få på
-                glutenfritt bröd
-              </em>
-            </h6>
-          </ul>
-        </div>
-      </div>
-    );
-  }
-}
+const lilithDescription = (
+  <div>
+    Persiljeröra, soltorkade tomater, champinjon,
+    <br />
+    rödlök, tomat, rostade frön & ruccola
+  </div>
+);
 
-export default WarmSandwich;
+export const WarmSandwich = () => (
+  <div>
+    <h4 className="pb-2 text-center font-weight-bold">Varma Mackor</h4>
+    <div className="menu-image-padding">
+      <Media query="(max-width: 630px)">
+        {(matches) => (
+          <img
+            className="rounded img-fluid"
+            width="100%"
+            alt="Café Blå Lotus"
+            src={matches ? warmSandwichMobile : warmsandwich}
+          />
+        )}
+      </Media>
+    </div>
+    <div className="p-4 pt-0 ">
+      <ul className="menu-list">
+        <MenuItem
+          useBoldName
+          name="Athena"
+          description="Skinka, dijon, dragon, purjo, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Freja"
+          description="Persiljeröra, chèvre, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Hermes"
+          description="Skinka, feta, purjo, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Hugin"
+          description="Salami, chèvre, rödlök, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Shiva"
+          description="Vitlökssmör, feta, champinjon, rödlök, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Abdallah"
+          description="Tonfiskröra, rödlök, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Lotus special"
+          description="Pesto, feta, tomat & ost"
+        />
+        <MenuItem
+          useBoldName
+          name="Lilith"
+          description={lilithDescription}
+          isVegan
+        />
+      </ul>
+      <h6 className="font-weight-light px-2 text-center my-4">
+        <em>
+          Alla mackor serveras på surdegsbröd och <br /> går att få på
+          glutenfritt bröd
+        </em>
+      </h6>
+    </div>
+  </div>
+);

@@ -4,21 +4,25 @@ html {
   height: 100%;
   overflow-x: hidden;
 }
+
 .btn {
   color: #000;
   border: 2px solid #a3c6c4 !important;
   background-color: #c2f0c2;
 }
+
 .btn:hover,
 .btn:active {
   background-color: #a3c6c4;
   color: #000;
 }
+
 main {
   flex: 1 0 auto;
   overflow-x: hidden;
   background-color: #a3c6c4;
 }
+
 body {
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 1px;
@@ -30,64 +34,99 @@ body {
   overflow-x: hidden;
   outline: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 .container {
   background-color: #a3c6c4;
   border-radius: 5px;
   color: black;
 }
+
 .content {
   background-color: #cdebeb;
 }
+
 #app div {
   height: 100%;
 }
+
 .breakfast {
   padding: 1em;
   font-size: 1.25rem;
   width: 100%;
 }
+
 .breakfast h6 {
   line-height: 25px;
   font-size: 16px;
 }
+
 .menu-image-padding {
   padding: 1em;
 }
+
 .veganBefore {
   display: none;
 }
+
 .adress {
   line-height: 30px;
 }
+
 .drinks {
   width: 200px;
   padding: 1em;
 }
+
 .drinks p {
   margin: 0;
 }
+
 .the-bosses {
   width: 70%;
 }
+
 .index-photo {
   margin: 0;
 }
+
 .extras {
   font-size: 1rem;
 }
+
 .history {
   width: 70%;
 }
+
 .image-gallery {
   margin-bottom: 2em;
 }
+
+.skeleton {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(-90deg, #e0e0e0 0%, #e8e8e8 50%, #e0e0e0 100%);
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
 .copyright {
   font-size: 10px;
 }
+
 .footer {
   background-color: #a3c6c4;
   color: black;
@@ -95,69 +134,87 @@ ul {
   grid-row-end: 3;
   font-family: "Courier New", Courier, monospace;
 }
+
 .footer p {
   font-size: 15px;
   text-transform: uppercase;
 }
+
 @media (max-width: 630px) {
   .menu-image-padding {
     padding: 0.5em;
   }
+
   .veganBefore {
     display: block;
   }
+
   .veganAfter {
     display: none;
   }
+
   .one {
     order: 1;
     margin-bottom: 1em;
   }
+
   .two {
     order: 3;
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
   .two img {
     width: 30px;
     height: 30px;
   }
+
   .three {
     order: 2;
     margin-bottom: 1em;
   }
+
   .breakfast-parent {
     justify-content: center;
   }
+
   .index-photo {
     margin-bottom: 1.5em;
   }
+
   .history {
     width: 80%;
   }
+
   .image-gallery {
     margin-bottom: 1em;
   }
+
   .content h5 {
     font-size: 18px;
   }
+
   .menu-list h5 {
     font-size: 16px;
   }
+
   .menu-item {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+
   .veganMenuItem {
     display: flex;
     justify-content: center;
   }
+
   .lunch-time {
     display: flex;
     flex-direction: column;
     font-weight: bold;
   }
+
   h6 em {
     font-size: 14px;
   }
@@ -166,6 +223,7 @@ ul {
 .img-thumbnail {
   background-color: #a3c6c4;
 }
+
 .grid-item {
   background: #ccc;
 }

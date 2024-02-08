@@ -3,13 +3,13 @@ import { Home } from "./Views/Home";
 import { Meny } from "./Views/Meny";
 import { PhotoAlbum } from "./Views/PhotoAlbum";
 import { Story } from "./Views/Story";
-import Breakfast from "./Components/Breakfast";
-import ColdSandwich from "./Components/ColdSandwich";
-import Dishes from "./Components/Dishes";
-import Drinks from "./Components/Drinks";
-import Lunch from "./Components/Lunch";
-import Snacks from "./Components/Snacks";
-import WarmSandwich from "./Components/WarmSandwich";
+import { Breakfast } from "./Components/Breakfast";
+import { ColdSandwich } from "./Components/ColdSandwich";
+import { Dishes } from "./Components/Dishes";
+import { Drinks } from "./Components/Drinks";
+import { Lunch } from "./Components/Lunch";
+import { Snacks } from "./Components/Snacks";
+import { WarmSandwich } from "./Components/WarmSandwich";
 
 const routes = {
   pageRoutes: [

@@ -1,45 +1,47 @@
+const image = (path) => require(`./images/${path}`);
+
 export default {
   //Social Media icons
-  facebook2: require("./images/facebook2.png"),
-  instagram2: require("./images/instagram2.png"),
+  facebook2: image("facebook2.png"),
+  instagram2: image("instagram2.png"),
 
   //Logos
-  logo: require("./images/blue-logo.png"),
-  flowerLogo: require("./images/flower-logo.png"),
+  logo: image("blue-logo.png"),
+  flowerLogo: image("flower-logo.png"),
 
   //Frontpage Image
-  indexLotus: require("./images/startPage-dator.jpg"),
-  indexLotusMobile: require("./images/startPage-mobil.jpg"),
+  indexLotus: image("startPage-dator.jpg"),
+  indexLotusMobile: image("startPage-mobil.jpg"),
 
   //Menu photos
-  breakfast: require("./images/mat/frukost1.jpg"),
-  breakfastMobile: require("./images/mat/frukost-mobil.jpg"),
-  lunch: require("./images/mat/lunch-dator(josefin).jpg"),
-  lunch1: require("./images/mat/lunch-dator(FC).jpg"),
-  lunchMobile: require("./images/mat/lunch-mobil.jpg"),
-  coldsandwich: require("./images/mat/coldSandwich-dator.jpg"),
-  coldsandwichMobile: require("./images/mat/coldSandwich-mobil.jpg"),
-  warmsandwich: require("./images/mat/warmSandwich-dator.jpg"),
-  warmSandwichMobile: require("./images/mat/warmSandwich-mobil.jpg"),
-  food: require("./images/mat/food-dator.jpg"),
-  foodMobile: require("./images/mat/food-mobil.jpg"),
-  snacks: require("./images/mat/snacks-dator.jpg"),
-  snacksMobile: require("./images/mat/snacks-mobil.jpg"),
-  drinks: require("./images/drinks-dator.jpg"),
-  drinksMobile: require("./images/mat/drinks-mobil.jpg"),
+  breakfast: image("mat/frukost1.jpg"),
+  breakfastMobile: image("mat/frukost-mobil.jpg"),
+  lunch: image("mat/lunch-dator(josefin).jpg"),
+  lunch1: image("mat/lunch-dator(FC).jpg"),
+  lunchMobile: image("mat/lunch-mobil.jpg"),
+  coldsandwich: image("mat/coldSandwich-dator.jpg"),
+  coldsandwichMobile: image("mat/coldSandwich-mobil.jpg"),
+  warmsandwich: image("mat/warmSandwich-dator.jpg"),
+  warmSandwichMobile: image("mat/warmSandwich-mobil.jpg"),
+  food: image("mat/food-dator.jpg"),
+  foodMobile: image("mat/food-mobil.jpg"),
+  snacks: image("mat/snacks-dator.jpg"),
+  snacksMobile: image("mat/snacks-mobil.jpg"),
+  drinks: image("drinks-dator.jpg"),
+  drinksMobile: image("mat/drinks-mobil.jpg"),
 
   //Frida och Cecilia
-  fridaOchCecilia: require("./images/frida&cecilia2.jpg"),
+  fridaOchCecilia: image("frida&cecilia2.jpg"),
 
   //Gallery photos
-  img1: require("./images/startPage-dator.jpg"),
-  img2: require("./images/2Lotus4-dator.jpg"),
-  img3: require("./images/2Lotus91.jpg"),
-  img4: require("./images/2Lotus93.jpg"),
-  img5: require("./images/2Lotus98.jpg"),
-  img6: require("./images/2Lotus992.jpg"),
-  img7: require("./images/frida&cecilia.jpg"),
-  img8: require("./images/frontImage.jpg"),
-  img9: require("./images/mat/lunch-dator(josefin).jpg"),
-  img10: require("./images/mat/snacks-dator.jpg")
+  img1: image("startPage-dator.jpg"),
+  img2: image("2Lotus4-dator.jpg"),
+  img3: image("2Lotus91.jpg"),
+  img4: image("2Lotus93.jpg"),
+  img5: image("2Lotus98.jpg"),
+  img6: image("2Lotus992.jpg"),
+  img7: image("frida&cecilia.jpg"),
+  img8: image("frontImage.jpg"),
+  img9: image("mat/lunch-dator(josefin).jpg"),
+  img10: image("mat/snacks-dator.jpg"),
 };

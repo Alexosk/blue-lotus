@@ -7,25 +7,15 @@ export const Home = () => {
   return (
     <div className="index-photo">
       <Media query="(max-width: 1300px)">
-        {(matches) =>
-          matches ? (
-            <img
-              className="img-fluid"
-              height="auto"
-              width="100%"
-              alt="Café Blå Lotus"
-              src={indexLotusMobile}
-            />
-          ) : (
-            <img
-              className="img-fluid"
-              height="auto"
-              width="100%"
-              alt="Café Blå Lotus"
-              src={indexLotus}
-            />
-          )
-        }
+        {(matches) => (
+          <img
+            className="img-fluid"
+            height="auto"
+            width="100%"
+            alt="Café Blå Lotus"
+            src={matches ? indexLotusMobile : indexLotus}
+          />
+        )}
       </Media>
     </div>
   );
