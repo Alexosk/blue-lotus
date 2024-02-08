@@ -1,16 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import MenuNav from "../Components/MenuNav";
 
-class Meny extends Component {
-  render() {
-    return (
-      <div className="">
-        <div className="container content mb-5 ">
-          <MenuNav className="" />
-        </div>
+export const Meny = () => {
+  return (
+    <div className="">
+      <div className="container content mb-5 ">
+        <MenuNav className="" />
       </div>
-    );
-  }
-}
-
-export default Meny;
+    </div>
+  );
+};
