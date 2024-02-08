@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Media from "react-media";
-import { Badge } from "reactstrap";
 import images from "../images";
 let { coldsandwich, coldsandwichMobile } = images;
 
@@ -14,7 +13,7 @@ class ColdSandwich extends Component {
         <h2 className="text-center mt-2 p-2 font-weight-bold">Kalla Mackor</h2>
         <div className="menu-image-padding">
           <Media query="(max-width: 630px)">
-            {matches =>
+            {(matches) =>
               matches ? (
                 <img
                   className="rounded img-fluid"
@@ -117,8 +116,8 @@ class ColdSandwich extends Component {
           </div>
           <h6 className="font-weight-light text-center mb-5">
             <em>
-              Alla mackor innehåller grönsaker.<br /> Går att få på glutenfritt
-              knäckebröd.
+              Alla mackor innehåller grönsaker.
+              <br /> Går att få på glutenfritt knäckebröd.
             </em>
           </h6>
         </div>

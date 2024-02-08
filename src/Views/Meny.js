@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import MenuNav from "../Components/MenuNav";
-import images from "../images";
-let { menuPhoto } = images;
 
 class Meny extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import images from "../images";
-let { logo, facebook2, instagram2 } = images;
+let { facebook2, instagram2 } = images;
 
 class Contact extends Component {
   render() {

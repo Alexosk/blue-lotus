@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Badge } from "reactstrap";
 import Media from "react-media";
 import images from "../images";
 let { food, foodMobile } = images;
@@ -13,7 +12,7 @@ class Dishes extends Component {
           <div className="p-4 text-center mx-2">
             <h2 className="text-center mt-2 p-2 font-weight-bold">Maträtter</h2>
             <Media query="(max-width: 630px)">
-              {matches =>
+              {(matches) =>
                 matches ? (
                   <img
                     className="rounded mb-2 img-fluid"

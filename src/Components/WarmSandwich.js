@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Badge } from "reactstrap";
 import Media from "react-media";
 import images from "../images";
 let { warmsandwich, warmSandwichMobile } = images;
@@ -14,7 +13,7 @@ class WarmSandwich extends Component {
         <h2 className="text-center mt-2 p-2 font-weight-bold">Varma Mackor</h2>
         <div className="menu-image-padding">
           <Media query="(max-width: 630px)">
-            {matches =>
+            {(matches) =>
               matches ? (
                 <img
                   className="rounded img-fluid"
@@ -88,8 +87,8 @@ class WarmSandwich extends Component {
                 <span className="font-weight-bold veganMenuItem">
                   Lilith <span className="veganBefore">{veganBefore}</span>
                 </span>
-                Persiljeröra, soltorkade tomater, champinjon,<br /> rödlök,
-                tomat, rostade frön & ruccola{" "}
+                Persiljeröra, soltorkade tomater, champinjon,
+                <br /> rödlök, tomat, rostade frön & ruccola{" "}
                 <span className="veganAfter">{veganAfter}</span>
               </h5>
             </li>

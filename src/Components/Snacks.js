@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Badge } from "reactstrap";
 import Media from "react-media";
 import images from "../images";
 let { snacks, snacksMobile } = images;
@@ -15,7 +14,7 @@ class Snacks extends Component {
           </h2>
           <div className="menu-image-padding">
             <Media query="(max-width: 630px)">
-              {matches =>
+              {(matches) =>
                 matches ? (
                   <img
                     className="rounded img-fluid"

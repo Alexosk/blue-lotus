@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Badge } from "reactstrap";
 import Media from "react-media";
 import images from "../images";
 let { breakfast, breakfastMobile } = images;
@@ -19,7 +18,7 @@ class Breakfast extends Component {
         </div>
         <div className="menu-image-padding">
           <Media query="(max-width: 630px)">
-            {matches =>
+            {(matches) =>
               matches ? (
                 <img
                   className="rounded img-fluid"
@@ -56,15 +55,18 @@ class Breakfast extends Component {
           <div className="breakfast mb-2">
             <h4 className="text-center font-weight-bold">Paket 3</h4>
             <p className="mb-0 font-weight-light">
-              &#3866; Ostmacka <br /> &#3866; Yoghurt med nötkross, <br />honung
-              & blåbär <br /> &#3866; Juice <br /> &#3866; Kaffe/te
+              &#3866; Ostmacka <br /> &#3866; Yoghurt med nötkross, <br />
+              honung & blåbär <br /> &#3866; Juice <br /> &#3866; Kaffe/te
             </p>
           </div>
           <div className="breakfast mb-2">
             <h4 className="text-center font-weight-bold">Paket 4</h4>
             <p className="mb-0 font-weight-light">
-              &#3866; Ägg och kaviarmacka <br />&#3866; Yoghurt med nötkross,{" "}
-              <br />honung & blåbär <br />&#3866; Juice <br />&#3866; Kaffe/te
+              &#3866; Ägg och kaviarmacka <br />
+              &#3866; Yoghurt med nötkross, <br />
+              honung & blåbär <br />
+              &#3866; Juice <br />
+              &#3866; Kaffe/te
             </p>
           </div>
         </div>
