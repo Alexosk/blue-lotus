@@ -33,12 +33,13 @@ export const MainNavigation = (props) => (
         </div>
         <div className="spacer" />
         <div className="navigation-items">
-          <ul>
+          <ul className="main-navigation-list">
             <NavigationItem to="/">Hem</NavigationItem>
             <NavigationItem to="/meny/breakfast">Meny</NavigationItem>
             <NavigationItem to="/gallery">Galleri</NavigationItem>
             <NavigationItem to="/historia">Historia</NavigationItem>
             <NavigationItem to="/contact">Kontakt</NavigationItem>
+            <NavigationItem to="/rent">Hyra</NavigationItem>
           </ul>
         </div>
       </nav>

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { CONTACT_DETAILS, CONTACT_INFO, googleMapsLink } from "../constants";
+import Media from "react-media";
 
 export const Contact = () => {
+  const { pathname } = useLocation();
+  const [isMapLoaded, setMapLoaded] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="mt-4 pt-5 content container">
       <div className="d-flex flex-column justify-content-around flex-wrap">
@@ -14,7 +23,18 @@ export const Contact = () => {
             />
           </li>
           <li>
-            <h5 className="font-weight-light">{CONTACT_INFO.phone}</h5>
+            <Media query="(max-width: 1300px)">
+              {(matches) =>
+                matches ? (
+                  <a href="tel:+4686445043" style={{ fontSize: "20px" }}>
+                    {" "}
+                    {CONTACT_INFO.phone}
+                  </a>
+                ) : (
+                  <span style={{ fontSize: "20px" }}>{CONTACT_INFO.phone}</span>
+                )
+              }
+            </Media>
           </li>
         </ul>
         <ul className="justify-content-center p-4 d-flex">
@@ -27,6 +47,7 @@ export const Contact = () => {
           ))}
         </ul>
       </div>
+      {!isMapLoaded && <div className="text-center">Loading...</div>}
       <div className="d-flex pb-5 justify-content-center mb-5">
         <iframe
           title="iframe"
@@ -34,6 +55,7 @@ export const Contact = () => {
           className="border mt-4 rounded"
           width="90%"
           height="450"
+          onLoad={() => setMapLoaded(true)}
         >
           Your browser does not support iframes.
         </iframe>

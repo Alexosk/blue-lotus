@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import images from "../images";
 let { fridaOchCecilia } = images;
 
 export const Story = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="content container mt-4 mb-5 p-4">
       <h1 className="text-center mt-4">Historia</h1>

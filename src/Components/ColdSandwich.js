@@ -1,29 +1,14 @@
 import React from "react";
-import Media from "react-media";
 import images from "../images";
 import { MenuItem } from "./MenuItem";
-
-const { coldsandwich, coldsandwichMobile } = images;
+import { MenuImage } from "./MenuImage";
 
 export const ColdSandwich = () => (
   <div className="content">
     <h2 className="text-center mt-2 p-2 font-weight-bold">Kalla Mackor</h2>
-    <div className="menu-image-padding">
-      <Media query="(max-width: 630px)">
-        {(matches) => (
-          <img
-            className="rounded img-fluid"
-            height="auto"
-            width="100%"
-            alt="Café Blå Lotus"
-            src={matches ? coldsandwichMobile : coldsandwich}
-          />
-        )}
-      </Media>
-    </div>
-    <div className="d-flex flex-wrap flex-column align-items-center mt-2">
+    <MenuImage src={images.coldsandwich} alt="Cold sandwiches" />
+    <div className="d-flex flex-wrap flex-column align-items-center">
       <div className="p-4 mx-2">
-        <h4 className="pb-2 text-center font-weight-bold">Surdegsmackor</h4>
         <h6 className="pb-2 text-center">
           Välj mellan en skiva surdegsbröd eller knäckebröd
         </h6>

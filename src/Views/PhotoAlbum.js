@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { PHOTO_GALLERY_IMAGES } from "../constants";
 
 const Photo = ({ img }) => {
@@ -11,6 +12,11 @@ const Photo = ({ img }) => {
 
 export const PhotoAlbum = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const loadImages = async () => {

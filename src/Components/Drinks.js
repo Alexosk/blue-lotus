@@ -1,8 +1,6 @@
 import React from "react";
-import Media from "react-media";
 import images from "../images";
-
-let { drinks, drinksMobile } = images;
+import { MenuImage } from "./MenuImage";
 
 const DrinkCategory = ({ title, drinks }) => (
   <div className="drinks mb-2">
@@ -32,29 +30,9 @@ export const Drinks = () => {
   const alchaholicDrinks = ["Öl", "Rött vin", "Vitt vin", "Cider"];
 
   return (
-    <div className="p-4">
+    <div>
       <h2 className="text-center mt-2 p-0 font-weight-bold">Dryck</h2>
-      <div className="menu-image-padding">
-        <Media query="(max-width: 630px)">
-          {(matches) =>
-            matches ? (
-              <img
-                className="rounded mb-4 img-fluid"
-                width="100%"
-                alt="Café Blå Lotus"
-                src={drinksMobile}
-              />
-            ) : (
-              <img
-                className="rounded mb-4"
-                width="100%"
-                src={drinks}
-                alt="drinks"
-              />
-            )
-          }
-        </Media>
-      </div>
+      <MenuImage src={images.drinks} alt="Drinks" />
       <div className="d-flex flex-wrap justify-content-around mt-2 mb-5">
         <DrinkCategory title="Varma drycker" drinks={warmDrinks} />
         <DrinkCategory title="Kalla drycker" drinks={coldDrinks} />

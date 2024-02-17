@@ -1,9 +1,10 @@
 const image = (path) => require(`./images/${path}`);
+const video = (path) => require(`./images/${path}`);
 
 export default {
   //Social Media icons
-  facebook2: image("facebook2.png"),
-  instagram2: image("instagram2.png"),
+  facebook: image("facebook.png"),
+  instagram: image("instagram.png"),
 
   //Logos
   logo: image("blue-logo.png"),
@@ -15,20 +16,12 @@ export default {
 
   //Menu photos
   breakfast: image("mat/frukost1.jpg"),
-  breakfastMobile: image("mat/frukost-mobil.jpg"),
-  lunch: image("mat/lunch-dator(josefin).jpg"),
-  lunch1: image("mat/lunch-dator(FC).jpg"),
-  lunchMobile: image("mat/lunch-mobil.jpg"),
+  lunch: image("mat/lunch-dator(FC).jpg"),
   coldsandwich: image("mat/coldSandwich-dator.jpg"),
-  coldsandwichMobile: image("mat/coldSandwich-mobil.jpg"),
   warmsandwich: image("mat/warmSandwich-dator.jpg"),
-  warmSandwichMobile: image("mat/warmSandwich-mobil.jpg"),
   food: image("mat/food-dator.jpg"),
-  foodMobile: image("mat/food-mobil.jpg"),
   snacks: image("mat/snacks-dator.jpg"),
-  snacksMobile: image("mat/snacks-mobil.jpg"),
   drinks: image("drinks-dator.jpg"),
-  drinksMobile: image("mat/drinks-mobil.jpg"),
 
   //Frida och Cecilia
   fridaOchCecilia: image("frida&cecilia2.jpg"),
@@ -44,4 +37,16 @@ export default {
   img8: image("frontImage.jpg"),
   img9: image("mat/lunch-dator(josefin).jpg"),
   img10: image("mat/snacks-dator.jpg"),
+
+  // Rental photos
+  plocktallrik: image("mat/plocktallrik.JPG"),
+  bar: image("mat/drinks-mobil.jpg"),
+
+  //Rental Gallery photos
+  rentalImg1: image("lokal/rental7(filip).JPG"),
+  rentalImg2: image("lokal/rental6(filip).JPG"),
+  rentalImg3: image("lokal/rental1.JPG"),
+
+  // Video
+  rentalVideo: video("lokal/246c62a4-371c-4b8b-bb3f-67dd8b93f128.MP4"),
 };

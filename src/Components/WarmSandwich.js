@@ -1,9 +1,7 @@
 import React from "react";
-import Media from "react-media";
 import images from "../images";
 import { MenuItem } from "./MenuItem";
-
-const { warmsandwich, warmSandwichMobile } = images;
+import { MenuImage } from "./MenuImage";
 
 const lilithDescription = (
   <div>
@@ -16,19 +14,8 @@ const lilithDescription = (
 export const WarmSandwich = () => (
   <div>
     <h4 className="pb-2 text-center font-weight-bold">Varma Mackor</h4>
-    <div className="menu-image-padding">
-      <Media query="(max-width: 630px)">
-        {(matches) => (
-          <img
-            className="rounded img-fluid"
-            width="100%"
-            alt="Café Blå Lotus"
-            src={matches ? warmSandwichMobile : warmsandwich}
-          />
-        )}
-      </Media>
-    </div>
-    <div className="p-4 pt-0 ">
+    <MenuImage src={images.warmsandwich} alt="Warm sandwiches" />
+    <div className="p-4 pt-0 d-flex flex-column align-items-center ">
       <ul className="menu-list">
         <MenuItem
           useBoldName

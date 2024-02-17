@@ -27,6 +27,7 @@ const SideDrawer = (props) => {
         <NavigationItem href="/gallery">Galleri</NavigationItem>
         <NavigationItem href="/historia">Historia</NavigationItem>
         <NavigationItem href="/contact">Kontakt</NavigationItem>
+        <NavigationItem href="/rent">Hyra</NavigationItem>
       </ul>
     </nav>
   );

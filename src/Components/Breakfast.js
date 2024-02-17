@@ -1,12 +1,16 @@
 import React from "react";
-import Media from "react-media";
 import images from "../images";
+import { MenuImage } from "./MenuImage";
+import { MenuItem } from "./MenuItem";
 
-const { breakfast, breakfastMobile } = images;
-
-const BreakfastItem = ({ title, children }) => (
+const BreakfastItem = ({ title, children, useSmallerFont }) => (
   <div className="breakfast mb-2">
-    <h4 className="text-center mb-2 font-weight-bold">{title}</h4>
+    <h4
+      className="text-center mb-2 font-weight-bold"
+      style={{ fontSize: useSmallerFont ? "16px" : "" }}
+    >
+      {title}
+    </h4>
     <p className="mb-0 font-weight-light">{children}</p>
   </div>
 );
@@ -23,43 +27,27 @@ export const Breakfast = () => {
           <span className="font-weight-bold">Helg</span> 10:00-12:00
         </p>
       </div>
-      <div className="menu-image-padding">
-        <Media query="(max-width: 630px)">
-          {(matches) =>
-            matches ? (
-              <img
-                className="rounded img-fluid"
-                width="100%"
-                alt="Café Blå Lotus"
-                src={breakfastMobile}
-              />
-            ) : (
-              <img
-                className="rounded img-fluid align-self-center"
-                width="100%"
-                height="auto"
-                alt="Café Blå Lotus"
-                src={breakfast}
-              />
-            )
-          }
-        </Media>
-      </div>
-      <div className="breakfast-parent d-flex flex-column align-items-center mt-4 d-flex flex-wrap text-center">
+      <MenuImage src={images.breakfast} alt="Breakfast" />
+      <div className="breakfast-parent d-flex flex-column  align-items-center d-flex flex-wrap text-center">
         <BreakfastItem title="Liten">
-          &#3866; Valfri kall macka <br /> &#3866; Kaffe/Te
+          <MenuItem useDot name="Valfri kall macka" />
+          <MenuItem useDot name="Kaffe/Te" />
         </BreakfastItem>
         <BreakfastItem title="Stor">
-          &#3866; Valfri kall macka <br /> &#3866; Yoghurt med granola,
-          <br />
-          nötter, hallon och honung <br /> &#3866; Juice <br /> &#3866; Kaffe/Te
+          <MenuItem useDot name="Valfri kall macka" />
+          <MenuItem
+            useDot
+            name="Yoghurt med granola, nötter, hallon och honung"
+          />
+          <MenuItem useDot name="Juice" />
+          <MenuItem useDot name="Kaffe/Te" />
+        </BreakfastItem>
+        <BreakfastItem title="Tillägg" useSmallerFont>
+          <MenuItem useDot name="Valfri Kaffe/Chai" useSmallerFont />
+          <MenuItem useDot name="Kokt ägg EKO" useSmallerFont />
+          <MenuItem useDot name="Kokt ägg med kaviar" useSmallerFont />
         </BreakfastItem>
       </div>
-      <p className="extras text-center font-weight-light mb-4">
-        <span className="font-weight-bold">Tillägg:</span> <br /> &#3866; Valfri
-        Kaffe/Chai <br /> &#3866; Kokt ägg EKO <br /> &#3866; Kokt ägg med
-        kaviar
-      </p>
       <h6 className="font-weight-light text-center mb-5">
         <em>Vegan alternativ finns</em>
       </h6>

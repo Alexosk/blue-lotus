@@ -1,9 +1,9 @@
 import images from "../images";
-let { facebook2, instagram2 } = images;
+let { facebook, instagram } = images;
 
 export const SOCIALS = {
-  instagram: instagram2,
-  facebook: facebook2,
+  instagram: instagram,
+  facebook: facebook,
 };
 
 export const CONTACT_INFO = {

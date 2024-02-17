@@ -12,3 +12,10 @@ export const PHOTO_GALLERY_IMAGES = [
   images.img9,
   images.img10,
 ];
+
+export const RENTAL_IMAGES = [
+  images.rentalVideo,
+  images.rentalImg1,
+  images.rentalImg2,
+  images.rentalImg3,
+];
