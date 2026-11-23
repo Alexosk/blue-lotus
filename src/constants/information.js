@@ -13,10 +13,9 @@ export const CONTACT_INFO = {
 };
 
 export const OPEN_HOURS = {
-  mondayToWednesday: "Mån-Ons: 9-19",
-  thursday: "Tors: 9-21",
-  friday: "Fre: 9-19",
-  weekend: "Lör-Sön: 10-17:30",
+  mondayToFriday: "Mån-Fre: 9-20",
+  saturday: "Lör: 10-18",
+  sunday: "Sön: 11-17",
 };
 
 export const CONTACT_DETAILS = {

@@ -39,7 +39,7 @@ export const MainNavigation = (props) => (
             <NavigationItem to="/gallery">Galleri</NavigationItem>
             <NavigationItem to="/historia">Historia</NavigationItem>
             <NavigationItem to="/contact">Kontakt</NavigationItem>
-            <NavigationItem to="/rent">Hyra</NavigationItem>
+            {/* <NavigationItem to="/rent">Hyra</NavigationItem> */}
           </ul>
         </div>
       </nav>
